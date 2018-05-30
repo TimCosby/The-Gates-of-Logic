@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PickupExternal : MonoBehaviour {
+public class PickupTag : MonoBehaviour {
 
 	[Tooltip("From where the ray will come. Recommended: Main Camera")]
 	public Transform center = null;
