@@ -22,8 +22,8 @@ public class Pickup: MonoBehaviour {
 	}
 
 	private void OnMouseUp() {
-		obj.useGravity = true;
 		obj.isKinematic = false;
+		obj.useGravity = true;
 		transform.parent = null;
 	}
 }

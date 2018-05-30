@@ -7,8 +7,8 @@ public class ZeroGravity : MonoBehaviour {
 	public float TimeLimit = 0;
 	public float Delay = 0;
 	public GameObject[] AffectedObjects;
-	private float TimeStart = 0;
-	private float TimeEnd = 0;
+	private float TimeStart = -10;
+	private float TimeEnd = -10;
 	private bool Toggled = false;
 	private bool Unpressed = true;
 	
@@ -29,7 +29,9 @@ public class ZeroGravity : MonoBehaviour {
 			Debug.Log("On");
 			TimeStart = Time.time;
 			Toggled = true;
+		}
 
+		if (Toggled) {
 			for (int i = 0; i < AffectedObjects.Length; i++) {
 				AffectedObjects[i].GetComponent<Rigidbody>().useGravity = false;
 			}
