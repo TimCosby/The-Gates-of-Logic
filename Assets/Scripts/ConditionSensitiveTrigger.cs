@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConditionSensitiveTrigger : Trigger {
 
-	public Trigger[] Triggers;
+	public GameObject[] TriggerObjects;
 	private bool StartingTrig;
 
 	public void Start() {
@@ -13,15 +13,15 @@ public class ConditionSensitiveTrigger : Trigger {
 
 	private void Update() {
 		if (!SingleUse || (SingleUse && StartingTrig == Triggered)) {
-			for (int i = 0; i < Triggers.Length; i++) {
-				if (Triggers[i].Triggered == false) {
+			for (int i = 0; i < TriggerObjects.Length; i++) {
+				if (TriggerObjects[i].GetComponent<Trigger>().Triggered == false) {
 					if (Inversed)
 						Triggered = true;
 					else
 						Triggered = false;
 					break;
 				}
-				else if (i == Triggers.Length - 1) {
+				else if (i == TriggerObjects.Length - 1) {
 					if (Inversed)
 						Triggered = false;
 					else

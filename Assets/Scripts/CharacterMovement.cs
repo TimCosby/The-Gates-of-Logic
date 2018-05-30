@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 public class CharacterMovement : MonoBehaviour {
 
+	public Camera CharacterCamera;
+	public Camera OverviewCamera;
+
     //public Rigidbody Player;
     private CharacterController Character;
 
@@ -31,11 +34,22 @@ public class CharacterMovement : MonoBehaviour {
 
 	private void FixedUpdate()
     {
-		// Player Movement
-		MovePlayer();
-		// Player Jumps
-		//JumpPlayer();
-    }
+		bool SwitchCamera = Input.GetKey(KeyCode.Tab);
+
+		if (SwitchCamera) {
+			OverviewCamera.GetComponent<Camera>().enabled = true;
+			CharacterCamera.GetComponent<Camera>().enabled = false;
+		}
+		else {
+			OverviewCamera.GetComponent<Camera>().enabled = false;
+			CharacterCamera.GetComponent<Camera>().enabled = true;
+
+			// Player Movement
+			MovePlayer();
+			// Player Jumps
+			//JumpPlayer();
+		}
+	}
 
 	private void MovePlayer() {
 		float Hori = Input.GetAxis("Horizontal");
