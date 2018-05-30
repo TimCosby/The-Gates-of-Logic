@@ -7,11 +7,13 @@ public class ChangeText : MonoBehaviour {
 	private TextMesh Text;
 	public string OffText;
 	public string OnText;
-	private Trigger Trigger;
+	public Trigger Trigger;
 
 	private void Start() {
 		Text = GetComponent<TextMesh>();
-		Trigger = GetComponent<Trigger>();
+		if (Trigger == null) {
+			Trigger = GetComponent<Trigger>();
+		}
 	}
 
 	// Update is called once per frame

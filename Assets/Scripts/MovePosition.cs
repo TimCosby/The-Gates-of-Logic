@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MovePosition : MonoBehaviour {
 
-	private Trigger Trigger;
+	public Trigger Trigger;
 	public Vector3 ToPos;
 	private Vector3 FromPos;
 	private Transform obj;
 	public float speed = 2f;
 
 	private void Start() {
-		Trigger = GetComponent<Trigger>();
+		if (Trigger == null) {
+			Trigger = GetComponent<Trigger>();
+		}
 		obj = GetComponent<Transform>();
 		FromPos = obj.position;
 	}

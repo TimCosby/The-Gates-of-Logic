@@ -2,13 +2,15 @@
 
 public class ChangeColour : MonoBehaviour {
 
-	private Trigger Trigger;
+	public Trigger Trigger;
 	public Material[] ObjectMaterial;
 	Renderer rend;
 
 	// Use this for initialization
 	void Start () {
-		Trigger = GetComponent<Trigger>();
+		if (Trigger == null) {
+			Trigger = GetComponent<Trigger>();
+		}
 		rend = GetComponent<Renderer>();
 	}
 	
