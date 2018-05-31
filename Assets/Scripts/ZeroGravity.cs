@@ -11,6 +11,8 @@ public class ZeroGravity : MonoBehaviour {
 	private float TimeEnd = -10;
 	private bool Toggled = false;
 	private bool Unpressed = true;
+	public AudioClip BackgroundMusic;
+	public AudioClip ZeroGMusic;
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +20,8 @@ public class ZeroGravity : MonoBehaviour {
 
 		if (Toggled && (Input.GetKeyUp(KeyCode.E) || Time.time - TimeStart - TimeLimit > 0)) {
 			Debug.Log("Off");
+			GetComponent<AudioSource>().clip = BackgroundMusic;
+			GetComponent<AudioSource>().Play();
 			TimeEnd = Time.time;
 			Toggled = false;
 
@@ -27,6 +31,8 @@ public class ZeroGravity : MonoBehaviour {
 		}
 		else if (Unpressed && !Toggled && GravKey && Time.time - TimeEnd - Delay > 0) {
 			Debug.Log("On");
+			GetComponent<AudioSource>().clip = ZeroGMusic;
+			GetComponent<AudioSource>().Play();
 			TimeStart = Time.time;
 			Toggled = true;
 		}
