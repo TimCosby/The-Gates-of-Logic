@@ -1,14 +1,23 @@
 fileFormatVersion: 2
-guid: 44ce3e8d9a6d1a0489addb497ea765fb
+guid: bbb02bb844806594f9e574b711a2702e
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Circle
+    100004: Circle_001
     400000: //RootNode
-    2100000: Material
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
+    400002: Circle
+    400004: Circle_001
+    2100000: unnamed
+    2300000: Circle
+    2300002: Circle_001
+    2300004: //RootNode
+    3300000: Circle
+    3300002: Circle_001
+    3300004: //RootNode
+    4300000: Circle_001
+    4300002: Circle
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
