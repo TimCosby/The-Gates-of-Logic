@@ -20,11 +20,13 @@ public class CollisionSensitiveTrigger : Trigger {
 	}
 
 	private void OnCollisionExit(Collision collision) {
-		if (Inversed) {
-			Triggered = true;
-		}
-		else {
-			Triggered = false;
+		if (!SingleUse) {
+			if (Inversed) {
+				Triggered = true;
+			}
+			else {
+				Triggered = false;
+			}
 		}
 	}
 }

@@ -18,28 +18,34 @@ public class ConditionSensitiveTrigger : Trigger {
 	}
 
 	private void Update() {
-		if (!SingleUse || (SingleUse && StartingTrig == Triggered)) {  
+		if (!SingleUse || (SingleUse && StartingTrig == Triggered)) {
 			int NumTrues = 0;
 			for (int i = 0; i < TriggerObjects.Length; i++) {
 				if (TriggerObjects[i].GetComponent<Trigger>().Triggered == true) {
 					NumTrues++;
-				} 
+				}
 			}
 
 			if (NumTrues < 1) {
 				Triggered = false;
-			} else {
+			}
+			else {
 				if (IsOR) {
 					Triggered = true;
-				} else if (IsXOR && NumTrues == 1) {
+				}
+				else if (IsXOR && NumTrues == 1) {
 					Triggered = true;
-				} else if (IsXOR) {
+				}
+				else if (IsXOR) {
 					Triggered = false;
-				} else if (IsAND && NumTrues == TriggerObjects.Length) {
+				}
+				else if (IsAND && NumTrues == TriggerObjects.Length) {
 					Triggered = true;
-				} else if (IsAND) {
+				}
+				else if (IsAND) {
 					Triggered = false;
-				} else {
+				}
+				else {
 					Triggered = true;
 				}
 			}
