@@ -5,6 +5,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	public Camera CharacterCamera;
 	public Camera OverviewCamera;
+	private bool SwappedCam = false;
 
     //public Rigidbody Player;
     private CharacterController Character;
@@ -35,8 +36,11 @@ public class CharacterMovement : MonoBehaviour {
 	private void FixedUpdate()
     {
 		bool SwitchCamera = Input.GetKey(KeyCode.Tab);
-
 		if (SwitchCamera) {
+			SwappedCam = !SwappedCam;
+		}
+
+		if (SwappedCam) {
 			OverviewCamera.GetComponent<Camera>().enabled = true;
 			CharacterCamera.GetComponent<Camera>().enabled = false;
 		}
