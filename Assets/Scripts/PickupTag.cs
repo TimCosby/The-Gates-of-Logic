@@ -37,6 +37,8 @@ public class PickupTag : MonoBehaviour {
 	[Tooltip("The tag used by liftable objects.")]
 	public string liftTag = "Liftable";
 
+	public Shader RegularShader;
+	public Shader NewShader;
 
 	private float wantedPosition = 3f;
 	private float grabTimer = 0f;
