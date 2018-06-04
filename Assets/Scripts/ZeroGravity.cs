@@ -6,7 +6,7 @@ public class ZeroGravity : MonoBehaviour {
 
 	public float TimeLimit = 0;
 	public float Delay = 0;
-	public GameObject[] AffectedObjects;
+	public string[] AffectedObjects;
 	private float TimeStart = -10;
 	private float TimeEnd = -10;
 	private bool Toggled = false;
@@ -20,17 +20,24 @@ public class ZeroGravity : MonoBehaviour {
 
 		if (Toggled && (Input.GetKeyUp(KeyCode.E) || Time.time - TimeStart - TimeLimit > 0)) {
 			Debug.Log("Off");
+			GetComponent<CharacterMovement>().ZeroG = false;
+			
 			GetComponent<AudioSource>().clip = BackgroundMusic;
 			GetComponent<AudioSource>().Play();
 			TimeEnd = Time.time;
 			Toggled = false;
 
 			for (int i = 0; i < AffectedObjects.Length; i++) {
-				AffectedObjects[i].GetComponent<Rigidbody>().useGravity = true;
+				GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
+				for (int j = 0; j < Objects.Length; j++) {
+					Objects[j].GetComponent<Rigidbody>().useGravity = true;
+				}
 			}
 		}
 		else if (Unpressed && !Toggled && GravKey && Time.time - TimeEnd - Delay > 0) {
 			Debug.Log("On");
+			GetComponent<CharacterMovement>().ZeroG = true;
+
 			GetComponent<AudioSource>().clip = ZeroGMusic;
 			GetComponent<AudioSource>().Play();
 			TimeStart = Time.time;
@@ -39,7 +46,10 @@ public class ZeroGravity : MonoBehaviour {
 
 		if (Toggled) {
 			for (int i = 0; i < AffectedObjects.Length; i++) {
-				AffectedObjects[i].GetComponent<Rigidbody>().useGravity = false;
+				GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
+				for (int j = 0; j < Objects.Length; j++) {
+					Objects[j].GetComponent<Rigidbody>().useGravity = false;
+				}
 			}
 		}
 	}

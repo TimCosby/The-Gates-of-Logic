@@ -11,21 +11,21 @@ public class CharacterMovement : MonoBehaviour {
     private CharacterController Character;
 
 	// Force of jumps
-    public float JumpForce;
+    public float JumpForce = 6;
 	// Force of movement
-	public float MovementForce;
-
-	// Current 3D velocities
-    private float XVelocity;
-	private float YVelocity;
-	private float ZVelocity;
+	public float MovementForce = 3;
 
 	// Force of gravity
-    public float GForce = 9.8f;
-	// Delay before you can jump again
+	public float UpwardGravity = 16f;
+	public float DownwardGravity = 12f;
+	public float LowerUpwardGravity = 2f;
+	public float LowerDownwardGravity = .5f;
+   	// Delay before you can jump again
     public float JumpDelay;
 	private float LastJumpTime;
 
+	public bool ZeroG;
+	private float YVelocity;
 	private bool JumpBool;
 
 	// Use this for initialization
@@ -51,18 +51,15 @@ public class CharacterMovement : MonoBehaviour {
 		// Player Movement
 		MovePlayer();
 		// Player Jumps
-		//JumpPlayer();
+		JumpPlayer();
 	}
 
 	private void MovePlayer() {
 		float Hori = Input.GetAxis("Horizontal");
 		float Vert = Input.GetAxis("Vertical");
 
-		Vector3 MoveDirSide = transform.right * Hori * MovementForce;
-		Vector3 MoveDirForward = transform.forward * Vert * MovementForce;
-
-		Character.SimpleMove(MoveDirSide);
-		Character.SimpleMove(MoveDirForward);
+		Character.transform.position += Hori * transform.right * MovementForce * Time.deltaTime;
+		Character.transform.position += Vert * transform.forward * MovementForce * Time.deltaTime;
 	}
 
 	private void JumpPlayer() {
@@ -74,34 +71,44 @@ public class CharacterMovement : MonoBehaviour {
 		}
 		else {
 			// When Player is in the air
-			AirActions();
+			if (ZeroG) {
+				LowerGravityActions();
+			}
+			else {
+				AirActions();
+			}
 		}
 
-		//Character.Move(new Vector3(0f, YVelocity, 0f) * Time.deltaTime);
+		Character.Move(new Vector3(0f, YVelocity, 0f) * Time.deltaTime);
 	}
 
 	private void GroundActions() {
-		if (YVelocity != 0) { // Reset Z Velocity
-			YVelocity = 0;
-		}
-
 		if (JumpBool && (Time.time - LastJumpTime) > JumpDelay) {
 			// If jumped, increase velocity by the standard Y Force
 			YVelocity = JumpForce;
+			// Delay between hitting floor and next jump
+			LastJumpTime = Time.time;
 		}
 	}
 
 	private void AirActions() {
-		if (Character.velocity.y == 0 && YVelocity > 0) {
-			// If top of player hits something, stop going up
-			YVelocity = -GForce * Time.deltaTime;
+		if (YVelocity >= 0) {
+			if (Character.velocity.y == 0) {
+				YVelocity = -UpwardGravity * Time.deltaTime;
+			}
+			YVelocity -= UpwardGravity * Time.deltaTime;
 		}
 		else {
-			// Delay between hitting floor and next jump
-			LastJumpTime = Time.time;
+			YVelocity -= DownwardGravity * Time.deltaTime;
 		}
+	}
 
-		// Decrease vertical accelleration
-		YVelocity -= GForce * Time.deltaTime;
+	private void LowerGravityActions() {
+		if (YVelocity >= 0) {
+			YVelocity -= LowerUpwardGravity * Time.deltaTime;
+		}
+		else {
+			YVelocity -= LowerDownwardGravity * Time.deltaTime;
+		}
 	}
 }
