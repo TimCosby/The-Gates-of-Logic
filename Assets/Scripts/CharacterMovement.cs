@@ -36,23 +36,22 @@ public class CharacterMovement : MonoBehaviour {
 	private void FixedUpdate()
     {
 		bool SwitchCamera = Input.GetKey(KeyCode.Tab);
-		if (SwitchCamera) {
-			SwappedCam = !SwappedCam;
-		}
 
-		if (SwappedCam) {
-			OverviewCamera.GetComponent<Camera>().enabled = true;
-			CharacterCamera.GetComponent<Camera>().enabled = false;
+		if (SwitchCamera) {
+			if (!SwappedCam) {
+				SwappedCam = true;
+				OverviewCamera.GetComponent<Camera>().enabled = CharacterCamera.GetComponent<Camera>().enabled;
+				CharacterCamera.GetComponent<Camera>().enabled = !CharacterCamera.GetComponent<Camera>().enabled;
+			}
 		}
 		else {
-			OverviewCamera.GetComponent<Camera>().enabled = false;
-			CharacterCamera.GetComponent<Camera>().enabled = true;
-
-			// Player Movement
-			MovePlayer();
-			// Player Jumps
-			//JumpPlayer();
+			SwappedCam = false;
 		}
+
+		// Player Movement
+		MovePlayer();
+		// Player Jumps
+		//JumpPlayer();
 	}
 
 	private void MovePlayer() {
