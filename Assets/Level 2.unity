@@ -5918,9 +5918,8 @@ MonoBehaviour:
   ZeroGravityCharge: 0
   ZeroGravityMax: 100
   AffectedObjects:
-  - Player
-  - Cube
   - Sphere
+  - Cube
   BackgroundMusic: {fileID: 8300000, guid: 0e9b0a1e19242ad429e6f515129b913c, type: 3}
   ZeroGMusic: {fileID: 8300000, guid: 0765744dad1a0004ca7038b586673ad7, type: 3}
 --- !u!136 &1930973506
