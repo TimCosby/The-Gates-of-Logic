@@ -209,7 +209,6 @@ GameObject:
   - component: {fileID: 56561658}
   - component: {fileID: 56561657}
   - component: {fileID: 56561659}
-  - component: {fileID: 56561660}
   m_Layer: 0
   m_Name: R1 Input Wire
   m_TagString: Untagged
@@ -283,29 +282,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
+  Trigger: {fileID: 2137352798}
   ObjectMaterial:
   - {fileID: 2100000, guid: 170acb76a5d3e6147be31ef814cd6429, type: 2}
   - {fileID: 2100000, guid: d5a1a27ed173ecf4cb320078d212bdf3, type: 2}
---- !u!114 &56561660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 56561654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 0
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 2137352796}
 --- !u!1 &94624360
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +756,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2080949062}
+  - {fileID: 2080949065}
 --- !u!114 &151848191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,7 +1034,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2080949062}
+  - {fileID: 2080949065}
 --- !u!114 &199626381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2176,7 +2156,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2137352796}
+  - {fileID: 2137352798}
 --- !u!23 &490486834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2469,7 +2449,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2137352796}
+  - {fileID: 2137352798}
 --- !u!114 &524250465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3320,8 +3300,8 @@ MonoBehaviour:
   OR: 0
   XOR: 1
   TriggerObjects:
-  - {fileID: 125700489}
-  - {fileID: 853426831}
+  - {fileID: 125700490}
+  - {fileID: 853426836}
 --- !u!1 &706844442
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,7 +3622,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2137352796}
+  - {fileID: 2137352798}
 --- !u!1001 &717428214
 Prefab:
   m_ObjectHideFlags: 0
@@ -3858,9 +3838,9 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2137352796}
-  - {fileID: 199626378}
-  - {fileID: 118950303}
+  - {fileID: 118950305}
+  - {fileID: 524250464}
+  - {fileID: 199626380}
 --- !u!82 &749595606
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4981,7 +4961,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2137352796}
+  - {fileID: 2137352798}
 --- !u!114 &1050377418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5437,7 +5417,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2080949062}
+  - {fileID: 2080949065}
 --- !u!82 &1221726013
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7827,8 +7807,8 @@ MonoBehaviour:
   OR: 0
   XOR: 1
   TriggerObjects:
-  - {fileID: 125700489}
-  - {fileID: 853426831}
+  - {fileID: 125700490}
+  - {fileID: 853426836}
 --- !u!1 &1499372260
 GameObject:
   m_ObjectHideFlags: 0
@@ -10164,7 +10144,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 2080949062}
+  - {fileID: 2080949065}
 --- !u!114 &1956520327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11285,7 +11265,6 @@ GameObject:
   - component: {fileID: 2083330281}
   - component: {fileID: 2083330280}
   - component: {fileID: 2083330282}
-  - component: {fileID: 2083330283}
   m_Layer: 0
   m_Name: R1 Input Wire
   m_TagString: Untagged
@@ -11359,29 +11338,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
+  Trigger: {fileID: 2137352798}
   ObjectMaterial:
   - {fileID: 2100000, guid: 170acb76a5d3e6147be31ef814cd6429, type: 2}
   - {fileID: 2100000, guid: d5a1a27ed173ecf4cb320078d212bdf3, type: 2}
---- !u!114 &2083330283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2083330277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 0
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 2137352796}
 --- !u!1 &2086262032
 GameObject:
   m_ObjectHideFlags: 0
