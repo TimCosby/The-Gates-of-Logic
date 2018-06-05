@@ -37,8 +37,8 @@ public class PickupTag : MonoBehaviour {
 	[Tooltip("The tag used by liftable objects.")]
 	public string liftTag = "Liftable";
 
-	public Shader RegularShader;
-	public Shader NewShader;
+	public Material RegularMaterial;
+	public Material NewMaterial;
 
 	private float wantedPosition = 3f;
 	private float grabTimer = 0f;
@@ -108,6 +108,8 @@ public class PickupTag : MonoBehaviour {
 				if (Physics.Raycast(ray, out hit, reach, layerMask)) {
 					if (hit.collider.tag == liftTag) {
 						grabbed = hit.collider.gameObject;
+						//grabbed.GetComponent<Renderer>().material = NewMaterial;
+						Debug.Log("New");
 					}
 				}
 			}
@@ -123,6 +125,8 @@ public class PickupTag : MonoBehaviour {
 		}
 		else {
 			if (grabbed != null) {
+				//grabbed.GetComponent<Renderer>().material = RegularMaterial;
+				Debug.Log("Old");
 				grabbed = null;
 			}
 			// If you activate this, the wantedPosition will reset everytime
