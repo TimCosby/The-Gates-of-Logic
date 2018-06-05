@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ZeroGravity : MonoBehaviour {
 
 	public Image ZeroGravityBar;
+	public RawImage ZeroGravityIcon;
 	public float ZeroGravityCharge = 0;
 	public float ZeroGravityMax = 100;
 	//public float TimeLimit = 0;
@@ -32,6 +33,7 @@ public class ZeroGravity : MonoBehaviour {
 			GetComponent<AudioSource>().Play();
 			//TimeEnd = Time.time;
 			Toggled = false;
+			ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = false;
 
 			for (int i = 0; i < AffectedObjects.Length; i++) {
 				GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
@@ -48,9 +50,11 @@ public class ZeroGravity : MonoBehaviour {
 			GetComponent<AudioSource>().Play();
 			//TimeStart = Time.time;
 			Toggled = true;
+			ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = true;
 		}
 
 		if (Toggled) {
+			ZeroGravityBar.enabled = true;
 			if (ZeroGravityCharge != 0) {
 				ZeroGravityCharge -= 1;
 			}
@@ -61,9 +65,12 @@ public class ZeroGravity : MonoBehaviour {
 				}
 			}
 		} else {
-			if (ZeroGravityCharge != ZeroGravityMax ) {
+			if (ZeroGravityCharge != ZeroGravityMax) {
 				ZeroGravityCharge += 1;
-			}		
+				ZeroGravityBar.enabled = true;
+			} else {
+				ZeroGravityBar.enabled = false;
+			}
 		}
 	}
 }
