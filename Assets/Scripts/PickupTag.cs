@@ -59,12 +59,13 @@ public class PickupTag : MonoBehaviour {
 	}
 
 	private void UpdateInput() {
+		Debug.Log(wantGrab + " " + canGrabAgain + " " + canGrab);
 		// Check if the player is trying to grab / release an object
-		if (Input.GetButton("Fire1") && canGrab) {
-			wantGrab = true;
-		}
-		else {
-			wantGrab = false;
+		if (Input.GetButtonDown("Fire1") && canGrab) {
+			if (grabbed == null)
+				wantGrab = true;
+			else
+				wantGrab = false;
 		}
 
 		// Check if the player is charging a throw/push, also see if the player wants to throw/push
@@ -99,7 +100,6 @@ public class PickupTag : MonoBehaviour {
 	}
 
 	private void UpdateLogic() {
-
 		// Wants to grab / keep grabbing an object
 		if (wantGrab && canGrabAgain) {
 			if (grabbed == null) {

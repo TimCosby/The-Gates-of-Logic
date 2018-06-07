@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -6195,13 +6195,13 @@ MonoBehaviour:
   shadowCascadeCount: 4
   shadowCascadeRatios:
   - 0.05
-  - 0.2
+  - 0.15
   - 0.3
   shadowCascadeBorders:
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
+  - 0
+  - 0
+  - 0
+  - 0
   shadowAlgorithm: 0
   shadowVariant: 0
   shadowPrecision: 0
