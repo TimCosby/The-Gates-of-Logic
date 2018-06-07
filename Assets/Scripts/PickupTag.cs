@@ -112,7 +112,7 @@ public class PickupTag : MonoBehaviour {
 						Debug.Log("New");
 					}
 				}
-			}
+            }
 			else {
 				if (grabbed.GetComponent<Rigidbody>()) {
 					Rigidbody rb = grabbed.GetComponent<Rigidbody>();

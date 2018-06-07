@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ZeroGravity : MonoBehaviour {
 
-	public Image ZeroGravityBar;
 	public RawImage ZeroGravityIcon;
 	public float ZeroGravityCharge = 0;
 	public float ZeroGravityMax = 100;
@@ -23,9 +22,54 @@ public class ZeroGravity : MonoBehaviour {
 	void Update () {
 		float ratio = ZeroGravityCharge / ZeroGravityMax;
 		bool GravKey = Input.GetKey(KeyCode.E);
- 		ZeroGravityBar.rectTransform.localScale = new Vector3(ratio, 1, 1);
 
-		if (Toggled && (Input.GetKeyUp(KeyCode.E) || ZeroGravityCharge == 0)) {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Toggled = !Toggled;
+
+            if (Toggled)
+            {
+                Debug.Log("On");
+                GetComponent<CharacterMovement>().ZeroG = true;
+
+                GetComponent<AudioSource>().clip = ZeroGMusic;
+                GetComponent<AudioSource>().Play();
+                //TimeStart = Time.time;
+                Toggled = true;
+                ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = true;
+
+                for (int i = 0; i < AffectedObjects.Length; i++)
+                {
+                    GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
+                    for (int j = 0; j < Objects.Length; j++)
+                    {
+                        Objects[j].GetComponent<Rigidbody>().useGravity = false;
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Off");
+                GetComponent<CharacterMovement>().ZeroG = false;
+
+                GetComponent<AudioSource>().clip = BackgroundMusic;
+                GetComponent<AudioSource>().Play();
+                //TimeEnd = Time.time;
+                Toggled = false;
+                ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = false;
+
+                for (int i = 0; i < AffectedObjects.Length; i++)
+                {
+                    GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
+                    for (int j = 0; j < Objects.Length; j++)
+                    {
+                        Objects[j].GetComponent<Rigidbody>().useGravity = true;
+                    }
+                }
+            }
+        }
+        /*
+        if (Toggled && (Input.GetKeyUp(KeyCode.E) || ZeroGravityCharge == 0)) {
 			Debug.Log("Off");
 			GetComponent<CharacterMovement>().ZeroG = false;
 			
@@ -72,5 +116,6 @@ public class ZeroGravity : MonoBehaviour {
 				ZeroGravityBar.enabled = false;
 			}
 		}
+        */
 	}
 }
