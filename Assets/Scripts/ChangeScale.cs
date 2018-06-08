@@ -19,6 +19,8 @@ public class ChangeScale : MonoBehaviour {
 			Trigger = GetComponent<Trigger>();
 		}
 
+		OriginalScale = GetComponent<Transform>().localScale;
+
 		if (ChangeX) {
 			ChangeToScale.x = Scale.x;
 		}
@@ -39,8 +41,6 @@ public class ChangeScale : MonoBehaviour {
 		else {
 			ChangeToScale.z = OriginalScale.z;
 		}
-
-		OriginalScale = GetComponent<Transform>().localScale;
 	}
 	
 	// Update is called once per frame
