@@ -51,7 +51,7 @@ public class PickupTag : MonoBehaviour {
 	private bool canGrabAgain = true;
 	private GameObject grabbed = null;
 	public bool isRotating { get; private set; }
-
+	private bool firstPress = true;
 
 	void Update() {
 		UpdateInput();
@@ -61,11 +61,19 @@ public class PickupTag : MonoBehaviour {
 	private void UpdateInput() {
 		Debug.Log(wantGrab + " " + canGrabAgain + " " + canGrab);
 		// Check if the player is trying to grab / release an object
-		if (Input.GetButtonDown("Fire1") && canGrab) {
+		if (firstPress && Input.GetButton("Fire1")) {
+			firstPress = false;
+		}
+		if (!firstPress && Input.GetButtonDown("Fire1") && canGrab) {
 			if (grabbed == null)
 				wantGrab = true;
 			else
 				wantGrab = false;
+		}
+		else if (Input.GetButtonUp("Fire1")) {
+			if (grabbed == null) {
+				wantGrab = false;
+			}
 		}
 
 		// Check if the player is charging a throw/push, also see if the player wants to throw/push
@@ -124,7 +132,7 @@ public class PickupTag : MonoBehaviour {
 			}
 		}
 		else {
-			if (grabbed != null) {
+			if (!wantGrab) {
 				//grabbed.GetComponent<Renderer>().material = RegularMaterial;
 				Debug.Log("Old");
 				grabbed = null;
