@@ -22,7 +22,6 @@ public class ZeroGravity : MonoBehaviour {
         {
             Debug.Log("START");
             Toggled = true;
-            Update();
         }
     }
 
@@ -33,18 +32,53 @@ public class ZeroGravity : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E))
         {
             Toggled = !Toggled;
+
+            if (Toggled)
+            {
+                Debug.Log("On");
+                GetComponent<CharacterMovement>().ZeroG = true;
+
+                GetComponent<AudioSource>().clip = ZeroGMusic;
+                GetComponent<AudioSource>().Play();
+                
+                ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = true;
+
+                for (int i = 0; i < AffectedObjects.Length; i++)
+                {
+                    GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
+                    for (int j = 0; j < Objects.Length; j++)
+                    {
+                        Objects[j].GetComponent<Rigidbody>().useGravity = false;
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Off");
+                GetComponent<CharacterMovement>().ZeroG = false;
+
+                GetComponent<AudioSource>().clip = BackgroundMusic;
+                GetComponent<AudioSource>().Play();
+                //TimeEnd = Time.time;
+                Toggled = false;
+                ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = false;
+
+                for (int i = 0; i < AffectedObjects.Length; i++)
+                {
+                    GameObject[] Objects = GameObject.FindGameObjectsWithTag(AffectedObjects[i]);
+                    for (int j = 0; j < Objects.Length; j++)
+                    {
+                        Objects[j].GetComponent<Rigidbody>().useGravity = true;
+                    }
+                }
+            }
         }
+
 
         if (Toggled)
         {
-            Debug.Log("On");
-            GetComponent<CharacterMovement>().ZeroG = true;
-
-            GetComponent<AudioSource>().clip = ZeroGMusic;
-            GetComponent<AudioSource>().Play();
-            //TimeStart = Time.time;
-            Toggled = true;
             ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = true;
+            Toggled = true;
 
             for (int i = 0; i < AffectedObjects.Length; i++)
             {
@@ -57,14 +91,8 @@ public class ZeroGravity : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Off");
-            GetComponent<CharacterMovement>().ZeroG = false;
-
-            GetComponent<AudioSource>().clip = BackgroundMusic;
-            GetComponent<AudioSource>().Play();
-            //TimeEnd = Time.time;
-            Toggled = false;
             ZeroGravityIcon.GetComponent<ChangingTextureIcon>().Toggled = false;
+            Toggled = false;
 
             for (int i = 0; i < AffectedObjects.Length; i++)
             {
