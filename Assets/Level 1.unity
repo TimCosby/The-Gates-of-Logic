@@ -6684,9 +6684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162da12f7fbe181479ce41a57354331a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startZeroGravity: 0
   ZeroGravityIcon: {fileID: 1084761216}
-  ZeroGravityCharge: 0
-  ZeroGravityMax: 100
   AffectedObjects:
   - Cube
   - Player
@@ -10027,6 +10026,7 @@ GameObject:
   - component: {fileID: 1873458051}
   - component: {fileID: 1873458050}
   - component: {fileID: 1873458049}
+  - component: {fileID: 1873458055}
   m_Layer: 0
   m_Name: Next Level Trigger
   m_TagString: Untagged
@@ -10140,6 +10140,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1873458055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873458048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d941dabdde086429f2cb8849a3e92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trigger: {fileID: 0}
+  SceneName: Level AND
 --- !u!1 &1876518209 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
