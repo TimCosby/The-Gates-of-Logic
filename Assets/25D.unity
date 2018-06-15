@@ -327,7 +327,7 @@ MonoBehaviour:
   CharacterCamera: {fileID: 1877610003}
   OverviewCamera: {fileID: 1877610003}
   JumpForce: 6
-  MovementForce: 3
+  MovementForce: 4.5
   UpwardGravity: 16
   DownwardGravity: 12
   LowerUpwardGravity: 2
@@ -2024,13 +2024,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877609999}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 1.7, y: 7.32, z: -10.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 148056547}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!1 &1924679024
 GameObject:
   m_ObjectHideFlags: 0
