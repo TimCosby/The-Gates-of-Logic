@@ -8,12 +8,19 @@ public class TouchSensitiveTrigger : Trigger {
 	public bool Toggleable = false;
 	public float Delay = 0f;
 	private float LastPress = -100f;
+	private bool StartingTrigger;
 
-    private void OnTriggerEnter(Collider other)
+	private void Start() {
+		StartingTrigger = Triggered;
+	}
+
+	private void OnTriggerEnter(Collider other)
     {
         if (other.tag == TriggerTag && LastPress <= Time.time - Delay) {
 			if (Toggleable) {
-				Triggered = !Triggered;
+				if (!SingleUse || (SingleUse && StartingTrigger == Triggered)) {
+					Triggered = !Triggered;
+				}
 			}
 			else if (Inversed) {
 				Triggered = false;
