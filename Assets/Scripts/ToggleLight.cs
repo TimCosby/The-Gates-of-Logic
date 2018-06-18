@@ -7,6 +7,7 @@ public class ToggleLight : MonoBehaviour {
 	public bool Toggled = true;
 	public float MinStartingIntensity = 0f;
 	public float MaxStartingIntensity = 0f;
+	public float SmoothingOffset = 0f;
 	public float MinIntensity = 0f;
 	public float MaxIntensity = 300f;
 	public Trigger Trigger;
@@ -36,9 +37,9 @@ public class ToggleLight : MonoBehaviour {
 			InitialIntensity = false;
 		} 
 		else if (InitialIntensity) {
-			if (Light.intensity <= MinStartingIntensity + 1) {
+			if (Light.intensity <= MinStartingIntensity + SmoothingOffset) {
 				GoingUp = true;
-			} else if (Light.intensity >= MaxStartingIntensity - 1) {
+			} else if (Light.intensity >= MaxStartingIntensity - SmoothingOffset) {
 				GoingUp = false;
 			}
 
