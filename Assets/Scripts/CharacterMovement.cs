@@ -3,28 +3,28 @@ using System.Collections.Generic;
 
 public class CharacterMovement : MonoBehaviour {
 
-	public Camera CharacterCamera;
-	public Camera OverviewCamera;
-	private bool SwappedCam = false;
+	//public Camera CharacterCamera;
+	//public Camera OverviewCamera;
+	//private bool SwappedCam = false;
 
     //public Rigidbody Player;
     private CharacterController Character;
 
 	// Force of jumps
-    public float JumpForce = 6;
+    private float JumpForce = 8;
 	// Force of movement
-	public float MovementForce = 3;
+	private float MovementForce = 5;
 
 	// Force of gravity
-	public float UpwardGravity = 16f;
-	public float DownwardGravity = 12f;
-	public float LowerUpwardGravity = 2f;
-	public float LowerDownwardGravity = .5f;
+	private float UpwardGravity = 16f;
+	private float DownwardGravity = 12f;
+	//public float LowerUpwardGravity = 2f;
+	//public float LowerDownwardGravity = .5f;
    	// Delay before you can jump again
-    public float JumpDelay;
-	private float LastJumpTime;
+    private float JumpDelay = 0f;
+	private float LastJumpTime = -100f;
 
-	public bool ZeroG;
+	//public bool ZeroG;
 	private float YVelocity;
 	private bool JumpBool;
 
@@ -35,7 +35,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	private void FixedUpdate()
     {
-		bool SwitchCamera = Input.GetKey(KeyCode.Tab);
+		/*bool SwitchCamera = Input.GetKey(KeyCode.Tab);
 
 		if (SwitchCamera) {
 			if (!SwappedCam) {
@@ -46,7 +46,7 @@ public class CharacterMovement : MonoBehaviour {
 		}
 		else {
 			SwappedCam = false;
-		}
+		}*/
 
 		// Player Movement
 		MovePlayer();
@@ -71,12 +71,12 @@ public class CharacterMovement : MonoBehaviour {
 		}
 		else {
 			// When Player is in the air
-			if (ZeroG) {
+			/*if (ZeroG) {
 				LowerGravityActions();
 			}
-			else {
+			else {*/
 				AirActions();
-			}
+			//}
 		}
 
 		Character.Move(new Vector3(0f, YVelocity, 0f) * Time.deltaTime);
@@ -103,12 +103,12 @@ public class CharacterMovement : MonoBehaviour {
 		}
 	}
 
-	private void LowerGravityActions() {
+	/*private void LowerGravityActions() {
 		if (YVelocity >= 0) {
 			YVelocity -= LowerUpwardGravity * Time.deltaTime;
 		}
 		else {
 			YVelocity -= LowerDownwardGravity * Time.deltaTime;
 		}
-	}
+	}*/
 }
