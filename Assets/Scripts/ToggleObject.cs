@@ -20,6 +20,7 @@ public class ToggleObject : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		if (Trigger.Triggered != LastState) {
+			Debug.Log("DID");
 			if (Invert) {
 				for (int i = 0; i < ObjectsToDisable.Length; i++) {
 					ObjectsToDisable[i].SetActive(!Trigger.Triggered);
@@ -30,6 +31,8 @@ public class ToggleObject : MonoBehaviour {
 					ObjectsToDisable[i].SetActive(Trigger.Triggered);
 				}
 			}
+			LastState = Trigger.Triggered;
+			Debug.Log(Trigger.Triggered);
 		}
 	}
 }

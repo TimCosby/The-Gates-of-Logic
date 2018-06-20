@@ -1,14 +1,17 @@
 fileFormatVersion: 2
-guid: d9f29b224fa71364cafb594cf4fc45ba
+guid: 9b78ed743e561414686e02e9e5783c22
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: unnamed
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane1
+    4300000: Circle
+    4300002: OR_Gate
+    7400000: Default Take
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -84,7 +87,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
