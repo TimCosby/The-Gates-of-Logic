@@ -21,7 +21,7 @@ public class ConditionSensitiveTrigger : Trigger {
 		if (!SingleUse || (SingleUse && StartingTrig == Triggered)) {
 			int NumTrues = 0;
 			for (int i = 0; i < TriggerObjects.Length; i++) {
-				if (TriggerObjects[i].Triggered == true) {
+				if (TriggerObjects[i].gameObject.activeSelf && TriggerObjects[i].Triggered == true) {
 					NumTrues++;
 				}
 			}
