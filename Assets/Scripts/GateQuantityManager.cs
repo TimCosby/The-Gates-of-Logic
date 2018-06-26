@@ -26,8 +26,9 @@ public class GateQuantityManager : MonoBehaviour {
 	}
 
 	public int GetGate(int index) {
-		if (0 <= index && index <= Children)
+		if (0 <= index && index <= Children) {
 			return GateQuantity[index];
+		}
 		else {
 			return -1;
 		}

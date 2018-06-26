@@ -10205,8 +10205,8 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 0
   SingleUse: 0
-  AND: 1
-  OR: 0
+  AND: 0
+  OR: 1
   XOR: 0
   TriggerObjects:
   - {fileID: 1665924007}

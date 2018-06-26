@@ -39,12 +39,18 @@ public class Menu : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Trigger.Triggered) {
+			if (CurrentGate != Children - 2) {
+				GateObject[CurrentGate].SetActive(true);
+			}
+
 			if (Input.GetMouseButtonDown(0)) {
 				GateHUD[CurrentGate].SetActive(false);
 
-				if (CurrentGate != Children - 2 && GateObject[CurrentGate].activeSelf) { // If gate existed
+				if (CurrentGate != Children - 2) { // If gate existed
 					GateObject[CurrentGate].SetActive(false);
-					PlayerMenu.GetComponent<GateQuantityManager>().ModifyGate(CurrentGate, 1);
+					if (GateObject[CurrentGate].GetComponent<Trigger>().Triggered) {
+						PlayerMenu.GetComponent<GateQuantityManager>().ModifyGate(CurrentGate, 1);
+					}
 				}
 
 				CurrentGate++;
@@ -55,15 +61,17 @@ public class Menu : MonoBehaviour {
 
 				if (CurrentGate != Children - 2) { // If regular gate
 					int tempQuantity = PlayerMenu.GetComponent<GateQuantityManager>().GetGate(CurrentGate);
-					Debug.Log("quan: " + tempQuantity);
 					if (tempQuantity > 0) {
 						QuantityObject.GetComponent<TextMeshPro>().text = tempQuantity - 1 + QuantityObject.GetComponent<TextMeshPro>().text.Substring(1);
 						PlayerMenu.GetComponent<GateQuantityManager>().ModifyGate(CurrentGate, -1);
-						GateObject[CurrentGate].SetActive(true);
+						GateObject[CurrentGate].GetComponent<Trigger>().Triggered = true;
 					}
 					else {
 						QuantityObject.GetComponent<TextMeshPro>().text = tempQuantity + QuantityObject.GetComponent<TextMeshPro>().text.Substring(1);
+						GateObject[CurrentGate].GetComponent<Trigger>().Triggered = false;
 					}
+					GateObject[CurrentGate].SetActive(true);
+
 					QuantityObject.SetActive(true);
 				}
 				else {
@@ -72,6 +80,9 @@ public class Menu : MonoBehaviour {
 
 				GateHUD[CurrentGate].SetActive(true);
 			}
+		}
+		else if (CurrentGate != Children - 2 && !GateObject[CurrentGate].GetComponent<Trigger>().Triggered) {
+			GateObject[CurrentGate].SetActive(false);
 		}
 	}
 }
