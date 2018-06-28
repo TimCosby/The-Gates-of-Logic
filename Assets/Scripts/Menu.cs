@@ -12,7 +12,6 @@ public class Menu : MonoBehaviour {
 	private int CurrentGate;
 	private GameObject[] GateObject;
 	private Trigger Trigger;
-	private bool FirstRun = true;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +19,7 @@ public class Menu : MonoBehaviour {
 		PlayerMenu = PlayerObject.GetComponent<GateMenu>();
 
 		Children = PlayerObject.transform.childCount + 1;
-		CurrentGate = 1;
+		CurrentGate = 0;
 
 		GateObject = new GameObject[Children];
 
@@ -37,12 +36,6 @@ public class Menu : MonoBehaviour {
 
 		if (Trigger.Triggered) {
 			PlayerObject.SetActive(true);
-			if (FirstRun) {
-				tempName = GateObject[CurrentGate].name;
-				tempName = tempName.Substring(0, tempName.IndexOf(" "));
-				GateObject[CurrentGate].GetComponent<Renderer>().material = PlayerMenu.GetGateMaterial(tempName);
-				FirstRun = false;
-			}
 
 			if (CurrentGate != 0) {
 				GateObject[CurrentGate].SetActive(true);

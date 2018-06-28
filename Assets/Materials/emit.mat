@@ -345,7 +345,7 @@ Material:
     - _Drag: 1
     - _DstBlend: 10
     - _EmissiveColorMode: 1
-    - _EmissiveIntensity: 5
+    - _EmissiveIntensity: 10
     - _EmissiveStrength: 1
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
@@ -534,7 +534,7 @@ Material:
     - _Colour: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 0.17381296, g: 0.114142045, b: 0.8962264, a: 1}
+    - _EmissiveColor: {r: 0.8980392, g: 0.11372546, b: 0.152497, a: 1}
     - _EmissiveColour: {r: 1, g: 1, b: 1, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
