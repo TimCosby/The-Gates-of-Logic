@@ -6,83 +6,85 @@ using System;
 
 public class Menu : MonoBehaviour {
 
-	private GameObject PlayerMenu;
+	private GameObject PlayerObject;
+	private GateMenu PlayerMenu;
 	private int Children;
 	private int CurrentGate;
-	private GameObject QuantityObject;
-	private GameObject[] GateHUD;
 	private GameObject[] GateObject;
 	private Trigger Trigger;
+	private bool FirstRun = true;
 
 	// Use this for initialization
 	void Start () {
-		PlayerMenu = GameObject.FindGameObjectWithTag("Player").transform.GetChild(2).gameObject;
+		PlayerObject = GameObject.FindGameObjectWithTag("UIMenu").gameObject;
+		PlayerMenu = PlayerObject.GetComponent<GateMenu>();
 
-		Children = PlayerMenu.transform.childCount;
-		CurrentGate = Children - 2;
+		Children = PlayerObject.transform.childCount + 1;
+		CurrentGate = 1;
 
-		GateHUD = new GameObject[Children - 1];
-		GateObject = new GameObject[Children - 2];
+		GateObject = new GameObject[Children];
 
-		QuantityObject = PlayerMenu.transform.GetChild(0).gameObject;
+		Trigger = transform.GetChild(0).gameObject.GetComponent<Trigger>();
 
 		for (int i = 1; i < Children; i++) { // Get all the gates
-			GateHUD[i - 1] = PlayerMenu.transform.GetChild(i).gameObject;
-			if (i != Children - 1) {
-				GateObject[i - 1] = transform.GetChild(i).gameObject;
-			}
+			GateObject[i] = transform.GetChild(i).gameObject;
 		}
-
-		Trigger = transform.GetChild(0).GetComponent<Trigger>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		string tempName;
+
 		if (Trigger.Triggered) {
-			if (CurrentGate != Children - 2) {
+			PlayerObject.SetActive(true);
+			if (FirstRun) {
+				tempName = GateObject[CurrentGate].name;
+				tempName = tempName.Substring(0, tempName.IndexOf(" "));
+				GateObject[CurrentGate].GetComponent<Renderer>().material = PlayerMenu.GetGateMaterial(tempName);
+				FirstRun = false;
+			}
+
+			if (CurrentGate != 0) {
 				GateObject[CurrentGate].SetActive(true);
 			}
 
 			if (Input.GetMouseButtonDown(0)) {
-				GateHUD[CurrentGate].SetActive(false);
-
-				if (CurrentGate != Children - 2) { // If gate existed
+				if (CurrentGate != 0) {
 					GateObject[CurrentGate].SetActive(false);
-					if (GateObject[CurrentGate].GetComponent<Trigger>().Triggered) {
-						PlayerMenu.GetComponent<GateQuantityManager>().ModifyGate(CurrentGate, 1);
+					tempName = GateObject[CurrentGate].name;
+					tempName = tempName.Substring(0, tempName.IndexOf(" "));
+					if (PlayerMenu.IsGateActive(tempName, GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
+						PlayerMenu.ModifyGate(tempName, 1);
 					}
 				}
 
 				CurrentGate++;
 
-				if (CurrentGate == Children - 1) { // If is None
+				if (CurrentGate == Children) {
 					CurrentGate = 0;
 				}
-
-				if (CurrentGate != Children - 2) { // If regular gate
-					int tempQuantity = PlayerMenu.GetComponent<GateQuantityManager>().GetGate(CurrentGate);
-					if (tempQuantity > 0) {
-						QuantityObject.GetComponent<TextMeshPro>().text = tempQuantity - 1 + QuantityObject.GetComponent<TextMeshPro>().text.Substring(1);
-						PlayerMenu.GetComponent<GateQuantityManager>().ModifyGate(CurrentGate, -1);
-						GateObject[CurrentGate].GetComponent<Trigger>().Triggered = true;
-					}
-					else {
-						QuantityObject.GetComponent<TextMeshPro>().text = tempQuantity + QuantityObject.GetComponent<TextMeshPro>().text.Substring(1);
-						GateObject[CurrentGate].GetComponent<Trigger>().Triggered = false;
-					}
-					GateObject[CurrentGate].SetActive(true);
-
-					QuantityObject.SetActive(true);
-				}
 				else {
-					QuantityObject.SetActive(false);
-				}
+					tempName = GateObject[CurrentGate].name;
+					tempName = tempName.Substring(0, tempName.IndexOf(" "));
+					GateObject[CurrentGate].GetComponent<Renderer>().material = PlayerMenu.GetGateMaterial(tempName);
 
-				GateHUD[CurrentGate].SetActive(true);
+					if (PlayerMenu.IsGateActive(tempName, GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
+						PlayerMenu.ModifyGate(tempName, -1);
+					}
+				}
 			}
 		}
-		else if (CurrentGate != Children - 2 && !GateObject[CurrentGate].GetComponent<Trigger>().Triggered) {
-			GateObject[CurrentGate].SetActive(false);
+		else {
+			if (CurrentGate != 0) {
+				tempName = GateObject[CurrentGate].name;
+				tempName = tempName.Substring(0, tempName.IndexOf(" "));
+
+				if (!PlayerMenu.IsGateActive(tempName, GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
+					GateObject[CurrentGate].SetActive(false);
+				}
+			}
+
+			PlayerObject.SetActive(false);
 		}
 	}
 }

@@ -2,82 +2,80 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Collections.Specialized;
 
 public class GateMenu : MonoBehaviour {
 
-	public bool AND = true;
-	public bool OR = true;
-	public Trigger Trigger;
-	private int CurrentGate = 1;
+	private Dictionary<string, GameObject> GateObject;
+	private Dictionary<string, int> GateQuantity;
+	private int NumOfGates = 0;
 
-	private Dictionary<string, int> Quantity;
-	private Dictionary<string, GameObject> Gates;
-	private Transform QuantityObject;
+	public Material OutOfStock;
+	public Material InStock;
+
+	public int[] DefaultValues;
 
 	// Use this for initialization
 	void Start () {
-		Quantity = new Dictionary<string, int>();
-		Gates = new Dictionary<string, GameObject>();
-		Trigger = GetComponent<Trigger>();
-		QuantityObject = transform.GetChild(0);
+		GateObject = new Dictionary<string, GameObject>();
+		GateQuantity = new Dictionary<string, int>();
 
-		Gates.Add("EMPTY", transform.GetChild(1).gameObject);
+		NumOfGates = transform.childCount;
 
-		Quantity.Add("AND", 0);
-		Gates.Add("AND", transform.GetChild(2).gameObject);
-		Quantity.Add("OR", 1);
-		Gates.Add("OR", transform.GetChild(3).gameObject);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetMouseButtonDown(0)) {
-			if (CurrentGate == 0) { // Switching from OR to None
-				QuantityObject.gameObject.SetActive(false);
+		string tempName;
+		for (int i = 0; i < NumOfGates; i++) {
+			Transform tempObject = transform.GetChild(i);
+			tempName = tempObject.name;
+			tempName = tempName.Substring(0, tempName.IndexOf(" "));
+		
+			GateObject.Add(tempName, tempObject.gameObject);
+			GateObject[tempName].GetComponent<Renderer>().material = OutOfStock;
 
-				Gates["OR"].SetActive(false);
-				Gates["EMPTY"].SetActive(true);
+			if (DefaultValues.Length > i) {
+				GateQuantity.Add(tempName, DefaultValues[i]);
+				if (DefaultValues[i] > 0) {
+					tempObject.GetChild(0).GetComponent<TextMeshPro>().text = DefaultValues[i].ToString();
+					GateObject[tempName].GetComponent<Renderer>().material = InStock;
+				}
 			}
-			else if (CurrentGate == 1) { // Switching from None to AND 
-				QuantityObject.gameObject.SetActive(true);
-
-				Gates["EMPTY"].SetActive(false);
-				Gates["AND"].SetActive(true);
-
-				int tempQuantity = Quantity["AND"];
-				if (tempQuantity == 0) {
-					Trigger.Triggered = false;
-				}
-				else {
-					Trigger.Triggered = true;
-				}
-
-				QuantityObject.GetComponent<TextMeshPro>().SetText(tempQuantity.ToString());
+			else {
+				GateQuantity.Add(tempName, 0);
 			}
-			else if (CurrentGate == 2) {
-				QuantityObject.gameObject.SetActive(true);
-
-				Gates["AND"].SetActive(false);
-				Gates["OR"].SetActive(true);
-
-				int tempQuantity = Quantity["OR"];
-				if (tempQuantity == 0) {
-					Trigger.Triggered = false;
-				}
-				else {
-					Trigger.Triggered = true;
-				}
-
-				QuantityObject.GetComponent<TextMeshPro>().SetText(tempQuantity.ToString());
-				CurrentGate = -1;
-			}
-
-			CurrentGate++;
 		}
 	}
 
-	public void AddItem(string gate, int quantity) {
-		Quantity[gate] += quantity;
+	public void ModifyGate(string Gate, int Num) { // Edit the number of gates available for type <Gate>
+		if (GateQuantity.ContainsKey(Gate)) {
+			GateQuantity[Gate] += Num;
+			GateObject[Gate].transform.GetChild(0).GetComponent<TextMeshPro>().text = GateQuantity[Gate].ToString();
+
+			if (GateQuantity[Gate] == 0) { // If no more usable gates of this type
+				GateObject[Gate].GetComponent<Renderer>().material = OutOfStock;
+			}
+			else { // If not quantity 0
+				GateObject[Gate].GetComponent<Renderer>().material = InStock;
+			}
+		}
+	}
+
+	public int GetGateQuantity(string Gate) {
+		if (GateQuantity.ContainsKey(Gate)) {
+			return GateQuantity[Gate];
+		}
+		else {
+			return -1;
+		}
+	}
+
+	public bool IsGateActive(string Gate, Material mat) {
+		return mat == InStock;
+	}
+
+	public Material GetGateMaterial(string Gate) {
+		if (GateQuantity[Gate] == 0) {
+			return OutOfStock;
+		}
+		else {
+			return InStock;
+		}
 	}
 }
