@@ -12,6 +12,8 @@ public class Menu : MonoBehaviour {
 	private int CurrentGate;
 	private GameObject[] GateObject;
 	private Trigger Trigger;
+	private bool DidTurnOff = true;
+	public int DefaultGate = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +21,7 @@ public class Menu : MonoBehaviour {
 		PlayerMenu = PlayerObject.GetComponent<GateMenu>();
 
 		Children = PlayerObject.transform.childCount + 1;
-		CurrentGate = 0;
+		CurrentGate = DefaultGate;
 
 		GateObject = new GameObject[Children];
 
@@ -28,6 +30,12 @@ public class Menu : MonoBehaviour {
 		for (int i = 1; i < Children; i++) { // Get all the gates
 			GateObject[i] = transform.GetChild(i).gameObject;
 		}
+
+		if (CurrentGate != 0) {
+			string tempName = GateObject[CurrentGate].name;
+			tempName = tempName.Substring(0, tempName.IndexOf(" "));
+			GateObject[CurrentGate].SetActive(true);
+		}
 	}
 	
 	// Update is called once per frame
@@ -35,6 +43,7 @@ public class Menu : MonoBehaviour {
 		string tempName;
 
 		if (Trigger.Triggered) {
+			DidTurnOff = false;
 			PlayerObject.SetActive(true);
 
 			if (CurrentGate != 0) {
@@ -67,7 +76,8 @@ public class Menu : MonoBehaviour {
 				}
 			}
 		}
-		else {
+		else if (!DidTurnOff) {
+			DidTurnOff = true;
 			if (CurrentGate != 0) {
 				tempName = GateObject[CurrentGate].name;
 				tempName = tempName.Substring(0, tempName.IndexOf(" "));
