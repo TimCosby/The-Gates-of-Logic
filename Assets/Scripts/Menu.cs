@@ -6,7 +6,6 @@ using System;
 
 public class Menu : MonoBehaviour {
 
-    public int startingGate;
 	private GameObject PlayerObject;
 	private GateMenu PlayerMenu;
 	private int Children;
