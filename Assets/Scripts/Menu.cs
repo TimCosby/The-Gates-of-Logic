@@ -6,6 +6,7 @@ using System;
 
 public class Menu : MonoBehaviour {
 
+    public int startingGate;
 	private GameObject PlayerObject;
 	private GateMenu PlayerMenu;
 	private int Children;
@@ -19,7 +20,8 @@ public class Menu : MonoBehaviour {
 		PlayerMenu = PlayerObject.GetComponent<GateMenu>();
 
 		Children = PlayerObject.transform.childCount + 1;
-		CurrentGate = 0;
+
+        CurrentGate = startingGate;
 
 		GateObject = new GameObject[Children];
 
