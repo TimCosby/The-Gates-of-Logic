@@ -19806,7 +19806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1562236275}
   OffSet: {x: 0, y: -2, z: 0}
-  speed: 0.5
+  speed: 20
   X: 0
   Y: 1
   Z: 0
@@ -19823,7 +19823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggered: 0
   Inversed: 0
-  SingleUse: 1
+  SingleUse: 0
   AND: 1
   OR: 0
   XOR: 0
@@ -26181,7 +26181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 2135511655}
   OffSet: {x: 0, y: 5, z: 0}
-  speed: 5
+  speed: 20
   X: 1
   Y: 1
   Z: 1
@@ -26198,7 +26198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggered: 0
   Inversed: 0
-  SingleUse: 1
+  SingleUse: 0
   AND: 0
   OR: 0
   XOR: 0
