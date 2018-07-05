@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultGate: 0
+  DefaultGate: 1
 --- !u!65 &128871584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3311,7 +3311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultGate: 0
+  DefaultGate: 1
 --- !u!65 &342004959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4616,8 +4616,8 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 632248564}
+  - {fileID: 1774914074}
 --- !u!1 &444290633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6087,8 +6087,8 @@ MonoBehaviour:
   OR: 1
   XOR: 0
   TriggerObjects:
-  - {fileID: 856357709}
-  - {fileID: 1788860830}
+  - {fileID: 440471394}
+  - {fileID: 1810467926}
 --- !u!95 &554524374
 Animator:
   serializedVersion: 3
@@ -8732,7 +8732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9347eadb956ed7b48b380c633da88994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
+  Trigger: {fileID: 2105258057}
   OffSet: {x: -1, y: 0, z: 0}
   speed: 1
   X: 1
@@ -10683,7 +10683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultGate: 0
+  DefaultGate: 1
 --- !u!65 &1098739540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13141,8 +13141,8 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 856357709}
-  - {fileID: 1788860830}
+  - {fileID: 440471394}
+  - {fileID: 1810467926}
 --- !u!95 &1398062040
 Animator:
   serializedVersion: 3
@@ -15625,7 +15625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1588660929}
-  SceneName: Level 4
+  SceneName: Level 7
 --- !u!65 &1588660931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17333,6 +17333,29 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
   m_PrefabInternal: {fileID: 1774914071}
+--- !u!1 &1774914073 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
+  m_PrefabInternal: {fileID: 1774914071}
+--- !u!114 &1774914074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774914073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggered: 0
+  Inversed: 1
+  SingleUse: 0
+  AND: 0
+  OR: 0
+  XOR: 0
+  TriggerObjects:
+  - {fileID: 856357709}
 --- !u!1 &1788860825
 GameObject:
   m_ObjectHideFlags: 0
@@ -17632,8 +17655,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 856357709}
 --- !u!1 &1810752851
 GameObject:
   m_ObjectHideFlags: 0
@@ -17648,7 +17670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1810752852
 Transform:
   m_ObjectHideFlags: 0
@@ -18281,7 +18303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9347eadb956ed7b48b380c633da88994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
+  Trigger: {fileID: 2105258057}
   OffSet: {x: 1, y: 0, z: 0}
   speed: 1
   X: 1
@@ -19383,12 +19405,11 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 0
   SingleUse: 0
-  AND: 0
-  OR: 1
+  AND: 1
+  OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1098739538}
 --- !u!4 &2105258058
 Transform:
   m_ObjectHideFlags: 0

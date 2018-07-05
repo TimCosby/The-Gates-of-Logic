@@ -4061,7 +4061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &639603323
 Transform:
   m_ObjectHideFlags: 0
@@ -7188,7 +7188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1354522147}
-  SceneName: Level 4
+  SceneName: Level 6
 --- !u!65 &1354522149
 BoxCollider:
   m_ObjectHideFlags: 0
