@@ -10,7 +10,6 @@ public class PlaySound : MonoBehaviour {
 	public bool PlayOnToggle = false;
 	private bool StartMakingSound = false;
 	private bool DefaultState;
-	public bool debug = false;
 
 	private void Start() {
 		if (Trigger == null) {
@@ -28,10 +27,6 @@ public class PlaySound : MonoBehaviour {
 			StartMakingSound = true;
 		}
 
-		if (debug) {
-			Debug.Log(StartMakingSound + " " + DefaultState + " " + Trigger.Triggered);
-		}
-
 		if (StartMakingSound) {
 			if (Trigger.Triggered && !Played) {
 				if (Audio.isPlaying) {
@@ -45,10 +40,8 @@ public class PlaySound : MonoBehaviour {
 					Audio.Stop();
 				}
 				Played = false;
-				Debug.Log("did1 " + PlayOnToggle);
 				if (PlayOnToggle) {
 					Audio.Play();
-					Debug.Log("did");
 				}
 			}
 		}
