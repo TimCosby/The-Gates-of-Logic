@@ -6,7 +6,7 @@ public class TouchSensitiveTrigger : Trigger {
 
 	public string TriggerTag;
 	public bool Toggleable = false;
-	public float Delay = 0f;
+	public float Delay = 0.1f;
 	private float LastPress = -100f;
 	private bool StartingTrigger;
 
