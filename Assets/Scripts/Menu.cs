@@ -45,12 +45,13 @@ public class Menu : MonoBehaviour {
 		if (Trigger.Triggered) {
 			DidTurnOff = false;
 			PlayerObject.SetActive(true);
+			PlayerObject.transform.parent.GetComponent<CharacterMovement>().ModifyJump(false);
 
 			if (CurrentGate != 0) {
 				GateObject[CurrentGate].SetActive(true);
 			}
 
-			if (Input.GetMouseButtonDown(0)) {
+			if (Input.GetKeyDown("space")) {
 				if (CurrentGate != 0) {
 					GateObject[CurrentGate].SetActive(false);
 					tempName = GateObject[CurrentGate].name;
@@ -88,6 +89,7 @@ public class Menu : MonoBehaviour {
 			}
 
 			PlayerObject.SetActive(false);
+			PlayerObject.transform.parent.GetComponent<CharacterMovement>().ModifyJump(true);
 		}
 	}
 }

@@ -27,6 +27,7 @@ public class CharacterMovement : MonoBehaviour {
 	//public bool ZeroG;
 	private float YVelocity;
 	private bool JumpBool;
+	private bool AllowJump = true;
 
 	// Use this for initialization
 	void Start () {
@@ -83,7 +84,7 @@ public class CharacterMovement : MonoBehaviour {
 	}
 
 	private void GroundActions() {
-		if (JumpBool && (Time.time - LastJumpTime) > JumpDelay) {
+		if (AllowJump && JumpBool && (Time.time - LastJumpTime) > JumpDelay) {
 			// If jumped, increase velocity by the standard Y Force
 			YVelocity = JumpForce;
 			// Delay between hitting floor and next jump
@@ -101,6 +102,14 @@ public class CharacterMovement : MonoBehaviour {
 		else {
 			YVelocity -= DownwardGravity * Time.deltaTime;
 		}
+	}
+
+	public void DisableJump() {
+		AllowJump = false;
+	}
+
+	public void ModifyJump(bool modifier) {
+		AllowJump = modifier;
 	}
 
 	/*private void LowerGravityActions() {
