@@ -18,6 +18,7 @@ public class Menu : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		PlayerObject = GameObject.FindGameObjectWithTag("UIMenu").gameObject;
+		PlayerObject.SetActive(false);
 		PlayerMenu = PlayerObject.GetComponent<GateMenu>();
 
 		Children = PlayerObject.transform.childCount + 1;
