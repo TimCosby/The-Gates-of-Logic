@@ -6,7 +6,7 @@ using System;
 
 public class Menu : MonoBehaviour {
 
-	private GameObject PlayerObject;
+	public GameObject PlayerObject;
 	private GateMenu PlayerMenu;
 	private int Children;
 	private int CurrentGate;
@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		PlayerObject = GameObject.FindGameObjectWithTag("UIMenu").gameObject;
+		//PlayerObject = GameObject.FindGameObjectWithTag("UIMenu").gameObject;
 		PlayerObject.SetActive(false);
 		PlayerMenu = PlayerObject.GetComponent<GateMenu>();
 
