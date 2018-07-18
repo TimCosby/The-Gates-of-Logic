@@ -366,6 +366,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &49764734
 Transform:
   m_ObjectHideFlags: 0
@@ -1351,6 +1352,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Use the Gate Chooser to \nselect which gate affects\nthe circuit."
+  m_text: "Jump when on the Gate Chooser \nto select which gate affects\nthe circuit."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1419,9 +1421,12 @@ MonoBehaviour:
   m_textInfo:
     textComponent: {fileID: 135881362}
     characterCount: 63
+    characterCount: 72
     spriteCount: 0
     spaceCount: 11
     wordCount: 11
+    spaceCount: 13
+    wordCount: 13
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -1821,7 +1826,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   PlayerObject: {fileID: 49764733}
+=======
+  PlayerObject: {fileID: 0}
+>>>>>>> cbf073040dfded5366c24488d89df4a5f3f91a8f
   DefaultGate: 2
 --- !u!65 &248134938
 BoxCollider:
