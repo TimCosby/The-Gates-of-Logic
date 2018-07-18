@@ -4786,7 +4786,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 360450594}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &630195595
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5506,7 +5505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1514896520}
   PlayOnToggle: 1
-  debug: 0
 --- !u!114 &689187659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5813,7 +5811,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1375375002}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &700141137
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6970,7 +6967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 2037637080}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &921458829
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7791,7 +7787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1130324036}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &988210251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8145,7 +8140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1333254962}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1016576119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9569,7 +9563,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1662679837}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1202756898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10490,7 +10483,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 940557294}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &1343880794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13636,7 +13628,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1563589885}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &1702705259
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14950,7 +14941,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1872124301}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1807578675
 MonoBehaviour:
   m_ObjectHideFlags: 0
