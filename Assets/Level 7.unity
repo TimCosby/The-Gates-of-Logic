@@ -879,7 +879,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 223525801}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &25959349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3800,6 +3799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 3
 --- !u!65 &244789948
 BoxCollider:
@@ -4597,7 +4597,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 538234775}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &287110353
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5807,6 +5806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 1
 --- !u!65 &380028697
 BoxCollider:
@@ -7514,7 +7514,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 972673225}
   PlayOnToggle: 1
-  debug: 0
 --- !u!114 &520035978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8444,6 +8443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 2
 --- !u!65 &582813473
 BoxCollider:
@@ -9791,7 +9791,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 532751231}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &715032736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11876,7 +11875,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1324685536}
   PlayOnToggle: 1
-  debug: 0
 --- !u!114 &877741199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13725,6 +13723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 0
 --- !u!65 &1021516220
 BoxCollider:
@@ -14600,7 +14599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1070274722
 Transform:
   m_ObjectHideFlags: 0
@@ -15658,7 +15657,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 872373109}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1149470600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15878,7 +15876,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 2072715978}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1156356394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16213,6 +16210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 2
 --- !u!65 &1177932568
 BoxCollider:
@@ -20076,7 +20074,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 435425626}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1555933678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20738,7 +20735,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 10137771}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1618898165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22274,7 +22270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 578537310}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1751008920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24086,7 +24081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 52470527}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &1922131007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25676,7 +25670,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 900591594}
   PlayOnToggle: 1
-  debug: 0
 --- !u!64 &2040269426
 MeshCollider:
   m_ObjectHideFlags: 0

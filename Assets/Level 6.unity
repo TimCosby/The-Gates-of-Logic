@@ -567,6 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 2
 --- !u!65 &64380900
 BoxCollider:
@@ -1385,6 +1386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 1
 --- !u!65 &128871584
 BoxCollider:
@@ -2216,6 +2218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 2
 --- !u!65 &241270028
 BoxCollider:
@@ -3311,6 +3314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 1
 --- !u!65 &342004959
 BoxCollider:
@@ -8921,7 +8925,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 284091409}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &933223981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10683,6 +10686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 1
 --- !u!65 &1098739540
 BoxCollider:
@@ -11381,7 +11385,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 856357709}
   PlayOnToggle: 1
-  debug: 0
 --- !u!114 &1190983055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11651,7 +11654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 2105258057}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1192441048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13648,7 +13650,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1875621591}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1427728770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15036,7 +15037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1545956129
 Transform:
   m_ObjectHideFlags: 0

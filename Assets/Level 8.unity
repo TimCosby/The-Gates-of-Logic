@@ -2707,7 +2707,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 972673225}
   PlayOnToggle: 1
-  debug: 0
 --- !u!114 &520035978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4180,7 +4179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 1324685536}
   PlayOnToggle: 1
-  debug: 0
 --- !u!114 &877741199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4968,7 +4966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1070274722
 Transform:
   m_ObjectHideFlags: 0
@@ -5148,7 +5146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 2072715978}
   PlayOnToggle: 0
-  debug: 0
 --- !u!114 &1156356394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6629,6 +6626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
   DefaultGate: 0
 --- !u!65 &1605252955
 BoxCollider:
