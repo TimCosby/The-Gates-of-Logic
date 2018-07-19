@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -2468,10 +2468,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f59242870e3fb774c9b18363d156f154, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &257881996 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 257881995}
 --- !u!1 &257970889
 GameObject:
   m_ObjectHideFlags: 0
@@ -17522,7 +17518,7 @@ Transform:
   - {fileID: 1190983050}
   - {fileID: 1774914072}
   - {fileID: 1490093611}
-  - {fileID: 257881996}
+  - {fileID: 1065925478}
   - {fileID: 440471392}
   - {fileID: 1810467924}
   m_Father: {fileID: 453792554}
