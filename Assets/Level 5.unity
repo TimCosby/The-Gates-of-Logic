@@ -4595,7 +4595,7 @@ Transform:
   - {fileID: 543006789}
   - {fileID: 1385066304}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &646188681
 Prefab:
@@ -12953,8 +12953,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1683200957}
-  - component: {fileID: 1683200956}
   - component: {fileID: 1683200955}
+  - component: {fileID: 1683200956}
   - component: {fileID: 1683200954}
   - component: {fileID: 1683200953}
   - component: {fileID: 1683200952}
@@ -13219,8 +13219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d951803b831136f45b662eeb05c5d9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &1683200954
-CapsuleCollider:
+--- !u!135 &1683200954
+SphereCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -13228,10 +13228,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2.2019937
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.10099685, z: 0}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!23 &1683200955
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13273,7 +13272,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1683200946}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1683200957
 Transform:
   m_ObjectHideFlags: 0
@@ -13289,7 +13288,7 @@ Transform:
   - {fileID: 2055326875}
   - {fileID: 49764734}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1714086444
 GameObject:
@@ -15682,13 +15681,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2055326874}
-  m_LocalRotation: {x: 0.02848484, y: -0.29456306, z: 0.043068066, w: 0.95423603}
-  m_LocalPosition: {x: 2.29, y: 0.89, z: -3.96}
+  m_LocalRotation: {x: 0.30012745, y: -0.24582037, z: 0.02264925, w: 0.9214027}
+  m_LocalPosition: {x: 2.123, y: 2.61, z: -3.287}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1683200957}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 4.5730004, y: -34.16, z: 3.7630002}
+  m_LocalEulerAnglesHint: {x: 34.348003, y: -32.155003, z: -7.3640003}
 --- !u!114 &2055326876
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15775,8 +15774,8 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 397.88736
-  m_Range: 5
-  m_SpotAngle: 37.78193
+  m_Range: 4.8
+  m_SpotAngle: 17
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
