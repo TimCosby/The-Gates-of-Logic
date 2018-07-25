@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerObject: {fileID: 0}
+  PlayerObject: {fileID: 752583479}
   DefaultGate: 1
 --- !u!65 &128871584
 BoxCollider:
@@ -5016,7 +5016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerObject: {fileID: 0}
+  PlayerObject: {fileID: 752583479}
   DefaultGate: 1
 --- !u!65 &342004959
 BoxCollider:
