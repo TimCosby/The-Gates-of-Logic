@@ -8,7 +8,8 @@ public class GateChooser : Trigger {
 	private Dictionary<int, GameObject> GateObject;
 
 	public Trigger TouchTrigger;
-
+	
+	// AND = 0, OR = 1, XOR = 2
 	public int StartingGate = 0;
 	private int CurrentGate;
 
@@ -38,6 +39,7 @@ public class GateChooser : Trigger {
 		if (TouchTrigger.Triggered) {
 			WasTriggered = true;
 			GateObject[CurrentGate].SetActive(true);
+			Debug.Log("Did");
 			menu.EnableUI(GateName[CurrentGate]);
 
 			if (Input.GetKeyDown("space")) {
@@ -70,6 +72,7 @@ public class GateChooser : Trigger {
 				GateObject[CurrentGate].SetActive(false);
 			}
 			menu.DisableUI();
+			WasTriggered = false;
 		}
 	}
 }
