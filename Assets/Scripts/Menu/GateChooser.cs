@@ -42,8 +42,6 @@ public class GateChooser : Trigger {
 
 			if (Input.GetKeyDown("space")) {
 				GateObject[CurrentGate].SetActive(false);
-				Debug.Log("Gate: " + GateObject[CurrentGate] + " " + CurrentGate);
-				Debug.Log("Response: " + menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial));
 				if (menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
 					menu.ModifyGate(GateName[CurrentGate], 1);
 				}
