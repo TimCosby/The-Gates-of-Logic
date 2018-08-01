@@ -3225,7 +3225,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: eef91f054639ed5428b8b6904b84a4d5, type: 2}
+  - {fileID: 2100000, guid: 4a25b0a18c9102b4782ba16636d77927, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3439,7 +3439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &204426929
 Transform:
   m_ObjectHideFlags: 0
@@ -4175,6 +4175,7 @@ GameObject:
   - component: {fileID: 244789950}
   - component: {fileID: 244789949}
   - component: {fileID: 244789948}
+  - component: {fileID: 244789947}
   - component: {fileID: 244789946}
   m_Layer: 0
   m_Name: BottomRight Chooser
@@ -4182,7 +4183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &244789946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4204,6 +4205,27 @@ MonoBehaviour:
   - {fileID: 1685222108}
   - {fileID: 731994068}
   - {fileID: 806965660}
+  - {fileID: 244789947}
+--- !u!114 &244789947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244789945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc6f7f8163e4e5438e6f9c7ac11325f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggered: 0
+  Inversed: 0
+  SingleUse: 0
+  AND: 0
+  OR: 0
+  XOR: 0
+  TouchTrigger: {fileID: 865588436}
+  StartingGate: 2
+  canvas: {fileID: 1821330454}
 --- !u!65 &244789948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4917,7 +4939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &279025725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8474,7 +8496,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: eef91f054639ed5428b8b6904b84a4d5, type: 2}
+  - {fileID: 2100000, guid: 4a25b0a18c9102b4782ba16636d77927, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10471,6 +10493,7 @@ GameObject:
   - component: {fileID: 582813475}
   - component: {fileID: 582813474}
   - component: {fileID: 582813473}
+  - component: {fileID: 582813472}
   - component: {fileID: 582813476}
   - component: {fileID: 582813471}
   m_Layer: 0
@@ -10479,7 +10502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &582813470
 Transform:
   m_ObjectHideFlags: 0
@@ -10518,6 +10541,27 @@ MonoBehaviour:
   - {fileID: 1965859425}
   - {fileID: 1474553353}
   - {fileID: 1356262152}
+  - {fileID: 582813472}
+--- !u!114 &582813472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582813469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc6f7f8163e4e5438e6f9c7ac11325f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggered: 0
+  Inversed: 0
+  SingleUse: 0
+  AND: 0
+  OR: 0
+  XOR: 0
+  TouchTrigger: {fileID: 103706791}
+  StartingGate: 1
+  canvas: {fileID: 1821330454}
 --- !u!65 &582813473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12206,7 +12250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &681219003
 Transform:
   m_ObjectHideFlags: 0
@@ -14987,7 +15031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &854575302
 Transform:
   m_ObjectHideFlags: 0
@@ -18273,12 +18317,13 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 1
   SingleUse: 0
-  AND: 0
+  AND: 1
   OR: 0
   XOR: 0
   Master: {fileID: 1418390517}
   TriggerObjects:
   - {fileID: 1177932566}
+  - {fileID: 1177932573}
 --- !u!114 &1006028290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18636,6 +18681,7 @@ GameObject:
   - component: {fileID: 1021516222}
   - component: {fileID: 1021516221}
   - component: {fileID: 1021516220}
+  - component: {fileID: 1021516219}
   - component: {fileID: 1021516218}
   m_Layer: 0
   m_Name: ChoosePanel Left (1)
@@ -18643,7 +18689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1021516217
 Transform:
   m_ObjectHideFlags: 0
@@ -18682,6 +18728,27 @@ MonoBehaviour:
   - {fileID: 958388181}
   - {fileID: 1642746475}
   - {fileID: 291400275}
+  - {fileID: 1021516219}
+--- !u!114 &1021516219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1021516216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc6f7f8163e4e5438e6f9c7ac11325f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggered: 0
+  Inversed: 0
+  SingleUse: 0
+  AND: 0
+  OR: 0
+  XOR: 0
+  TouchTrigger: {fileID: 34335744}
+  StartingGate: 0
+  canvas: {fileID: 1821330454}
 --- !u!65 &1021516220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20953,12 +21020,13 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 1
   SingleUse: 0
-  AND: 0
+  AND: 1
   OR: 0
   XOR: 0
   Master: {fileID: 1418390517}
   TriggerObjects:
   - {fileID: 1177932566}
+  - {fileID: 1177932573}
 --- !u!1 &1117352984
 GameObject:
   m_ObjectHideFlags: 0
@@ -22732,7 +22800,7 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 0
   SingleUse: 0
-  AND: 0
+  AND: 1
   OR: 0
   XOR: 0
   Master: {fileID: 1418390517}
@@ -22756,7 +22824,7 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TouchTrigger: {fileID: 346128829}
-  StartingGate: 2
+  StartingGate: 1
   canvas: {fileID: 1821330454}
 --- !u!1 &1180094329
 GameObject:
@@ -25619,12 +25687,13 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 1
   SingleUse: 0
-  AND: 0
+  AND: 1
   OR: 0
   XOR: 0
   Master: {fileID: 1418390517}
   TriggerObjects:
   - {fileID: 1177932566}
+  - {fileID: 1177932573}
 --- !u!114 &1381754315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29638,12 +29707,13 @@ MonoBehaviour:
   Triggered: 0
   Inversed: 1
   SingleUse: 0
-  AND: 0
+  AND: 1
   OR: 0
   XOR: 0
   Master: {fileID: 1418390517}
   TriggerObjects:
   - {fileID: 1177932566}
+  - {fileID: 1177932573}
 --- !u!1 &1555933674
 GameObject:
   m_ObjectHideFlags: 0
@@ -33337,6 +33407,7 @@ MonoBehaviour:
   Master: {fileID: 1418390517}
   TriggerObjects:
   - {fileID: 1177932566}
+  - {fileID: 1177932573}
 --- !u!1001 &1756667120
 Prefab:
   m_ObjectHideFlags: 0
@@ -34556,9 +34627,9 @@ MonoBehaviour:
   AND: 1
   OR: 1
   XOR: 1
-  DefaultValues: 020000000000000001000000
-  OutOfStock: {fileID: 2100000, guid: 170acb76a5d3e6147be31ef814cd6429, type: 2}
-  InStock: {fileID: 2100000, guid: eef91f054639ed5428b8b6904b84a4d5, type: 2}
+  DefaultValues: 020000000000000000000000
+  OutOfStock: {fileID: 2100000, guid: eef91f054639ed5428b8b6904b84a4d5, type: 2}
+  InStock: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
   PlayerObject: {fileID: 1449974966}
 --- !u!1 &1827905076
 GameObject:
@@ -39636,7 +39707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2109772189
 Transform:
   m_ObjectHideFlags: 0
