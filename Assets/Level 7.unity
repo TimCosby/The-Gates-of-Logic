@@ -5535,8 +5535,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 312579714}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -5.78, y: 0, z: -7}
-  m_LocalScale: {x: 13.31377, y: 13, z: 1}
+  m_LocalPosition: {x: -5.78, y: 0, z: -10.5}
+  m_LocalScale: {x: 13.31377, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 980566318}
   m_RootOrder: 0
@@ -18103,8 +18103,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1032457906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.8, y: 9.5, z: -6.5}
-  m_LocalScale: {x: 1, y: 20, z: 14}
+  m_LocalPosition: {x: -12.8, y: 9.5, z: -10}
+  m_LocalScale: {x: 1, y: 20, z: 21}
   m_Children: []
   m_Father: {fileID: 1180094330}
   m_RootOrder: 1
@@ -20922,7 +20922,6 @@ GameObject:
   - component: {fileID: 1149470602}
   - component: {fileID: 1149470601}
   - component: {fileID: 1149470600}
-  - component: {fileID: 1149470599}
   - component: {fileID: 1149470598}
   m_Layer: 0
   m_Name: Output Panel Display
@@ -21026,19 +21025,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1149470599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149470597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0ff42c3f32425e4e9add0af8605dd7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 872373109}
-  PlayOnToggle: 0
 --- !u!114 &1149470600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22946,8 +22932,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305947510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 9.5, z: -6.5}
-  m_LocalScale: {x: 1, y: 20, z: 14}
+  m_LocalPosition: {x: 1.2, y: 9.5, z: -10}
+  m_LocalScale: {x: 1, y: 20, z: 21}
   m_Children: []
   m_Father: {fileID: 1180094330}
   m_RootOrder: 2
