@@ -32,6 +32,7 @@ public class CharacterMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Character = GetComponent<CharacterController>();
+		Cursor.visible = false;
 	}
 
 	private void FixedUpdate()
