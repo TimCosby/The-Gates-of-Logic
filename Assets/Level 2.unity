@@ -5634,7 +5634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggered: 0
   Inversed: 0
-  SingleUse: 0
+  SingleUse: 1
   AND: 1
   OR: 0
   XOR: 0
@@ -14156,6 +14156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d951803b831136f45b662eeb05c5d9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
 --- !u!135 &969518676
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15154,7 +15155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggered: 0
   Inversed: 0
-  SingleUse: 0
+  SingleUse: 1
   AND: 1
   OR: 0
   XOR: 0
