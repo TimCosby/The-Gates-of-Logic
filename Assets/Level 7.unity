@@ -13693,7 +13693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Trigger: {fileID: 813435588}
-  SceneName: Level 4
+  SceneName: Start Screen
 --- !u!65 &813435590
 BoxCollider:
   m_ObjectHideFlags: 0
