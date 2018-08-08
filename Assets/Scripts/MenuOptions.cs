@@ -3,15 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MenuOptions : MonoBehaviour {
 
+	private Button CurrentButton;
+
 	public void Start() {
-		transform.GetChild(0).GetComponent<Button>().Select();
+		CurrentButton = transform.GetChild(0).GetComponent<Button>();
+		CurrentButton.Select();
 	}
 
 	private void Update() {
 		Cursor.visible = false;
+
+		GameObject temp = EventSystem.current.currentSelectedGameObject;
+
+		if (temp == null || temp.GetComponents<Button>() == null) {
+			CurrentButton.Select();
+		}
+		else {
+			CurrentButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+		}
 	}
 
 	public void NewGame() {
