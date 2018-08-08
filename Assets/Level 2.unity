@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000212, guid: 91d89d2279570d04f8aff234519771a8,
+  m_LightingDataAsset: {fileID: 112000198, guid: 91d89d2279570d04f8aff234519771a8,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -5576,7 +5576,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 340854709}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -1.69, y: 58.83, z: -59.82}
+  m_LocalPosition: {x: -1.59, y: 58.83, z: -59.82}
   m_LocalScale: {x: 1, y: 0.0009999999, z: 0.1}
   m_Children:
   - {fileID: 516848994}
@@ -8064,7 +8064,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516848993}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 0.6}
   m_Children: []
   m_Father: {fileID: 340854710}
@@ -10519,7 +10519,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 734155230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.8}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8}
   m_LocalScale: {x: 1.1, y: 1, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318084144}
@@ -10991,7 +10991,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 830783570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
   m_LocalScale: {x: 1.1000006, y: 1, z: 0.6}
   m_Children: []
   m_Father: {fileID: 878846081}
@@ -11888,7 +11888,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 878846080}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.8, y: 58.38, z: -60.319}
+  m_LocalPosition: {x: -2.7, y: 58.38, z: -60.319}
   m_LocalScale: {x: 1.0000005, y: 0.0009999999, z: 0.1}
   m_Children:
   - {fileID: 830783571}
@@ -12181,7 +12181,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &905051923
 Transform:
@@ -14039,7 +14039,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969518668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.9, y: 2, z: -12.89}
+  m_LocalPosition: {x: -5.53, y: 2, z: -12.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463548410}
@@ -20021,7 +20021,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318084143}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.7, y: 58.38, z: -60.319}
+  m_LocalPosition: {x: -2.8, y: 58.38, z: -60.319}
   m_LocalScale: {x: 1.0000005, y: 0.0009999999, z: 0.1}
   m_Children:
   - {fileID: 734155231}
@@ -22975,7 +22975,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1545303247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.8}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8}
   m_LocalScale: {x: 1, y: 1, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1689803745}
@@ -24449,7 +24449,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1689803744}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -1.59, y: 58.83, z: -59.82}
+  m_LocalPosition: {x: -1.69, y: 58.83, z: -59.82}
   m_LocalScale: {x: 1, y: 0.0009999999, z: 0.1}
   m_Children:
   - {fileID: 1545303248}
@@ -24896,7 +24896,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1714682208
 Transform:
@@ -26655,7 +26655,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1871385929
 Transform:
