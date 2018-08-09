@@ -1,0 +1,1 @@
+Just run "The Gates of Logic" to play! There are a total of 6 levels.
