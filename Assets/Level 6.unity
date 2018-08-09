@@ -2263,8 +2263,6 @@ GameObject:
   - component: {fileID: 123817621}
   - component: {fileID: 123817624}
   - component: {fileID: 123817623}
-  - component: {fileID: 123817622}
-  - component: {fileID: 123817625}
   m_Layer: 0
   m_Name: Left Chooser Input
   m_TagString: Untagged
@@ -2287,21 +2285,6 @@ Transform:
   m_Father: {fileID: 504513866}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &123817622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 123817620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 123817625}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 170acb76a5d3e6147be31ef814cd6429, type: 2}
-  - {fileID: 2100000, guid: d5a1a27ed173ecf4cb320078d212bdf3, type: 2}
 --- !u!23 &123817623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2344,23 +2327,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123817620}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &123817625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 123817620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787216b0068932e46a60808eb443cc2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 0
-  XOR: 0
 --- !u!1 &128871581
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,7 +4183,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 284091410}
-  - component: {fileID: 284091409}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -4225,26 +4190,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &284091409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 284091408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 1
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &284091410
 Transform:
   m_ObjectHideFlags: 0
@@ -6276,7 +6221,6 @@ MonoBehaviour:
   OR: 1
   XOR: 0
   TriggerObjects:
-  - {fileID: 123817625}
   - {fileID: 1274783684}
 --- !u!95 &413630173
 Animator:
@@ -6483,7 +6427,7 @@ MonoBehaviour:
   XOR: 0
   TriggerObjects:
   - {fileID: 1519559449}
-  - {fileID: 1750975949}
+  - {fileID: 0}
 --- !u!95 &416995570
 Animator:
   serializedVersion: 3
@@ -8436,7 +8380,6 @@ GameObject:
   - component: {fileID: 500208290}
   - component: {fileID: 500208293}
   - component: {fileID: 500208292}
-  - component: {fileID: 500208291}
   - component: {fileID: 500208294}
   m_Layer: 0
   m_Name: Side Chooser Inputs
@@ -8458,21 +8401,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &500208291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 500208289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 66606363fd94d9d428f64a9c95786e5c, type: 2}
-  - {fileID: 2100000, guid: 7751651d6f3cf084abe7c6b3b0e8fa08, type: 2}
 --- !u!23 &500208292
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9867,7 +9795,6 @@ GameObject:
   - component: {fileID: 585352845}
   - component: {fileID: 585352848}
   - component: {fileID: 585352847}
-  - component: {fileID: 585352846}
   m_Layer: 0
   m_Name: Outline (6)
   m_TagString: Untagged
@@ -9888,21 +9815,6 @@ Transform:
   m_Father: {fileID: 1750975945}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &585352846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 585352844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &585352847
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10850,7 +10762,6 @@ GameObject:
   - component: {fileID: 658784500}
   - component: {fileID: 658784503}
   - component: {fileID: 658784502}
-  - component: {fileID: 658784501}
   m_Layer: 0
   m_Name: Outline (1)
   m_TagString: Untagged
@@ -10871,21 +10782,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &658784501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 658784499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &658784502
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11362,7 +11258,6 @@ GameObject:
   - component: {fileID: 690249763}
   - component: {fileID: 690249766}
   - component: {fileID: 690249765}
-  - component: {fileID: 690249764}
   m_Layer: 0
   m_Name: Side Chooser Inputs
   m_TagString: Untagged
@@ -11383,21 +11278,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &690249764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 690249762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 170acb76a5d3e6147be31ef814cd6429, type: 2}
-  - {fileID: 2100000, guid: d5a1a27ed173ecf4cb320078d212bdf3, type: 2}
 --- !u!23 &690249765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11637,7 +11517,6 @@ GameObject:
   - component: {fileID: 716438375}
   - component: {fileID: 716438378}
   - component: {fileID: 716438377}
-  - component: {fileID: 716438376}
   m_Layer: 0
   m_Name: Outline (2)
   m_TagString: Untagged
@@ -11658,21 +11537,6 @@ Transform:
   m_Father: {fileID: 123817621}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &716438376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 716438374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &716438377
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11754,7 +11618,6 @@ MonoBehaviour:
   XOR: 0
   TriggerObjects:
   - {fileID: 1519559449}
-  - {fileID: 1750975949}
 --- !u!95 &724377878
 Animator:
   serializedVersion: 3
@@ -14165,7 +14028,6 @@ GameObject:
   - component: {fileID: 893810732}
   - component: {fileID: 893810735}
   - component: {fileID: 893810734}
-  - component: {fileID: 893810733}
   m_Layer: 0
   m_Name: Outline
   m_TagString: Untagged
@@ -14186,21 +14048,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &893810733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 893810731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &893810734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14884,7 +14731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ff42c3f32425e4e9add0af8605dd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 284091409}
+  Trigger: {fileID: 0}
   PlayOnToggle: 0
 --- !u!114 &933223981
 MonoBehaviour:
@@ -16162,7 +16009,6 @@ GameObject:
   - component: {fileID: 1031208068}
   - component: {fileID: 1031208067}
   - component: {fileID: 1031208066}
-  - component: {fileID: 1031208065}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -16183,32 +16029,6 @@ Transform:
   m_Father: {fileID: 284091410}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1031208065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031208063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 1235349927}
-  - {fileID: 933223978}
-  - {fileID: 1031208063}
-  - {fileID: 689902144}
-  - {fileID: 392774809}
-  - {fileID: 1324299859}
 --- !u!65 &1031208066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16564,7 +16384,6 @@ GameObject:
   - component: {fileID: 1042441831}
   - component: {fileID: 1042441834}
   - component: {fileID: 1042441833}
-  - component: {fileID: 1042441832}
   - component: {fileID: 1042441835}
   m_Layer: 0
   m_Name: Side Chooser Inputs
@@ -16586,21 +16405,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1042441832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1042441830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 1042441835}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 170acb76a5d3e6147be31ef814cd6429, type: 2}
-  - {fileID: 2100000, guid: d5a1a27ed173ecf4cb320078d212bdf3, type: 2}
 --- !u!23 &1042441833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19590,7 +19394,6 @@ GameObject:
   - component: {fileID: 1245642949}
   - component: {fileID: 1245642952}
   - component: {fileID: 1245642951}
-  - component: {fileID: 1245642950}
   m_Layer: 0
   m_Name: Outline (7)
   m_TagString: Untagged
@@ -19611,21 +19414,6 @@ Transform:
   m_Father: {fileID: 1750975945}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1245642950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1245642948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1245642951
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19715,7 +19503,6 @@ GameObject:
   - component: {fileID: 1265575087}
   - component: {fileID: 1265575090}
   - component: {fileID: 1265575089}
-  - component: {fileID: 1265575088}
   m_Layer: 0
   m_Name: Outline (3)
   m_TagString: Untagged
@@ -19736,21 +19523,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1265575088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1265575086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1265575089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19860,31 +19632,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 44ce3e8d9a6d1a0489addb497ea765fb,
     type: 3}
   m_PrefabInternal: {fileID: 1267847490}
---- !u!1 &1267847492 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 44ce3e8d9a6d1a0489addb497ea765fb,
-    type: 3}
-  m_PrefabInternal: {fileID: 1267847490}
---- !u!114 &1267847493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1267847492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 1
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1274783679
 GameObject:
   m_ObjectHideFlags: 0
@@ -19896,7 +19643,6 @@ GameObject:
   - component: {fileID: 1274783683}
   - component: {fileID: 1274783682}
   - component: {fileID: 1274783681}
-  - component: {fileID: 1274783685}
   - component: {fileID: 1274783684}
   m_Layer: 0
   m_Name: Left Chooser Input
@@ -19994,17 +19740,6 @@ MonoBehaviour:
   AND: 0
   OR: 0
   XOR: 0
---- !u!114 &1274783685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1274783679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c489b918329e5342b10bb0d638c1f80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1280163282
 GameObject:
   m_ObjectHideFlags: 0
@@ -20570,7 +20305,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1324299859}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -5.78, y: 0, z: -10.5}
+  m_LocalPosition: {x: -5.8, y: 0, z: -10.5}
   m_LocalScale: {x: 13, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1760135316}
@@ -21604,7 +21339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ff42c3f32425e4e9add0af8605dd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 1875621591}
+  Trigger: {fileID: 0}
   PlayOnToggle: 0
 --- !u!114 &1427728770
 MonoBehaviour:
@@ -21888,31 +21623,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 44ce3e8d9a6d1a0489addb497ea765fb,
     type: 3}
   m_PrefabInternal: {fileID: 1434825208}
---- !u!1 &1434825210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 44ce3e8d9a6d1a0489addb497ea765fb,
-    type: 3}
-  m_PrefabInternal: {fileID: 1434825208}
---- !u!114 &1434825211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1434825210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 1
-  OR: 0
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1463122360
 GameObject:
   m_ObjectHideFlags: 0
@@ -22941,7 +22651,6 @@ GameObject:
   - component: {fileID: 1496341324}
   - component: {fileID: 1496341327}
   - component: {fileID: 1496341326}
-  - component: {fileID: 1496341325}
   m_Layer: 0
   m_Name: Outline
   m_TagString: Untagged
@@ -22962,21 +22671,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1496341325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1496341323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1496341326
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23508,7 +23202,6 @@ GameObject:
   - component: {fileID: 1537421607}
   - component: {fileID: 1537421610}
   - component: {fileID: 1537421609}
-  - component: {fileID: 1537421608}
   m_Layer: 0
   m_Name: Outline
   m_TagString: Untagged
@@ -23529,21 +23222,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1537421608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1537421606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1537421609
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25106,7 +24784,6 @@ GameObject:
   - component: {fileID: 1634055799}
   - component: {fileID: 1634055798}
   - component: {fileID: 1634055797}
-  - component: {fileID: 1634055796}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -25127,32 +24804,6 @@ Transform:
   m_Father: {fileID: 1875621592}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1634055796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1634055794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 1902651113}
-  - {fileID: 1427728767}
-  - {fileID: 1634055794}
-  - {fileID: 689902144}
-  - {fileID: 392774809}
-  - {fileID: 1324299859}
 --- !u!65 &1634055797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26711,7 +26362,6 @@ GameObject:
   - component: {fileID: 1722933926}
   - component: {fileID: 1722933929}
   - component: {fileID: 1722933928}
-  - component: {fileID: 1722933927}
   m_Layer: 0
   m_Name: Outline (3)
   m_TagString: Untagged
@@ -26732,21 +26382,6 @@ Transform:
   m_Father: {fileID: 123817621}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1722933927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722933925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1722933928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27024,8 +26659,6 @@ GameObject:
   - component: {fileID: 1750975945}
   - component: {fileID: 1750975948}
   - component: {fileID: 1750975947}
-  - component: {fileID: 1750975946}
-  - component: {fileID: 1750975949}
   m_Layer: 0
   m_Name: Right Chooser Input
   m_TagString: Untagged
@@ -27048,21 +26681,6 @@ Transform:
   m_Father: {fileID: 1463300698}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1750975946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750975944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 1750975949}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 66606363fd94d9d428f64a9c95786e5c, type: 2}
-  - {fileID: 2100000, guid: 7751651d6f3cf084abe7c6b3b0e8fa08, type: 2}
 --- !u!23 &1750975947
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27105,23 +26723,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750975944}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1750975949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750975944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787216b0068932e46a60808eb443cc2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 0
-  XOR: 0
 --- !u!1 &1760135314
 GameObject:
   m_ObjectHideFlags: 0
@@ -27299,7 +26900,6 @@ MonoBehaviour:
   OR: 0
   XOR: 0
   TriggerObjects:
-  - {fileID: 123817625}
   - {fileID: 1274783684}
 --- !u!95 &1763838807
 Animator:
@@ -27478,7 +27078,6 @@ GameObject:
   - component: {fileID: 1773685477}
   - component: {fileID: 1773685476}
   - component: {fileID: 1773685475}
-  - component: {fileID: 1773685474}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -27499,32 +27098,6 @@ Transform:
   m_Father: {fileID: 2105258058}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1773685474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1773685472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 1205708058}
-  - {fileID: 1192441045}
-  - {fileID: 1773685472}
-  - {fileID: 689902144}
-  - {fileID: 392774809}
-  - {fileID: 1324299859}
 --- !u!65 &1773685475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28167,7 +27740,6 @@ GameObject:
   - component: {fileID: 1797327447}
   - component: {fileID: 1797327450}
   - component: {fileID: 1797327449}
-  - component: {fileID: 1797327448}
   m_Layer: 0
   m_Name: Outline
   m_TagString: Untagged
@@ -28188,21 +27760,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1797327448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1797327446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1797327449
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29489,7 +29046,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875621592}
-  - component: {fileID: 1875621591}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -29497,26 +29053,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1875621591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1875621590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 1
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1875621592
 Transform:
   m_ObjectHideFlags: 0
@@ -29785,7 +29321,6 @@ GameObject:
   - component: {fileID: 1901346059}
   - component: {fileID: 1901346062}
   - component: {fileID: 1901346061}
-  - component: {fileID: 1901346060}
   m_Layer: 0
   m_Name: Outline (4)
   m_TagString: Untagged
@@ -29806,21 +29341,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1901346060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1901346058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &1901346061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30812,7 +30332,6 @@ GameObject:
   - component: {fileID: 2018890322}
   - component: {fileID: 2018890325}
   - component: {fileID: 2018890324}
-  - component: {fileID: 2018890323}
   m_Layer: 0
   m_Name: Outline (2)
   m_TagString: Untagged
@@ -30833,21 +30352,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &2018890323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2018890321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 87a7fe31201fbc2498ac2c87302cb28c, type: 2}
-  - {fileID: 2100000, guid: ef3376beadb7b024fa6031f17b66b091, type: 2}
 --- !u!23 &2018890324
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31153,7 +30657,6 @@ GameObject:
   - component: {fileID: 2033848567}
   - component: {fileID: 2033848570}
   - component: {fileID: 2033848569}
-  - component: {fileID: 2033848568}
   m_Layer: 0
   m_Name: Side Chooser Inputs
   m_TagString: Untagged
@@ -31174,21 +30677,6 @@ Transform:
   m_Father: {fileID: 1999144317}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2033848568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2033848566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091d252ed3f777b4195389423209d970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
-  ObjectMaterial:
-  - {fileID: 2100000, guid: 66606363fd94d9d428f64a9c95786e5c, type: 2}
-  - {fileID: 2100000, guid: 7751651d6f3cf084abe7c6b3b0e8fa08, type: 2}
 --- !u!23 &2033848569
 MeshRenderer:
   m_ObjectHideFlags: 0
