@@ -28,7 +28,6 @@ public class GateChooser : Trigger {
 		CurrentGate = StartingGate + 1;
 
 		for (int i = 1; i < transform.childCount; i++) {
-			Debug.Log(i + " " + transform.GetChild(i).name);
 			GateName.Add(i, transform.GetChild(i).name);
 			GateObject.Add(i, transform.GetChild(i).gameObject);
 		}
@@ -39,7 +38,6 @@ public class GateChooser : Trigger {
 		if (TouchTrigger.Triggered) {
 			WasTriggered = true;
 			GateObject[CurrentGate].SetActive(true);
-			Debug.Log("Did");
 			menu.EnableUI(GateName[CurrentGate]);
 
 			if (Input.GetKeyDown("space")) {

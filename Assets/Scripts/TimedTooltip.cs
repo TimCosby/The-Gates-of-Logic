@@ -16,7 +16,6 @@ public class TimedTooltip : MonoBehaviour
     public TextMeshProUGUI displayTextTitle;
     public TextMeshProUGUI displayTextInfo;
     public bool singleUse = false;
-    private bool hasUsed = false;
     public float duration = 3;
 
 
@@ -29,8 +28,6 @@ public class TimedTooltip : MonoBehaviour
             displayTextTitle.text = objectTextTitle;
             displayTextInfo.text = objectTextInfo;
         }
-
-        hasUsed = true;
     }
 
     private void Update()

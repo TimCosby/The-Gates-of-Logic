@@ -58,18 +58,14 @@ public class UIMenu : MonoBehaviour {
 	}
 
 	public void EnableUI(string Gate) {
-		Debug.Log("ENABLE");
 		PlayerObject.GetComponent<CharacterMovement>().ModifyJump(false);
 		for (int i = 0; i <= Gates.childCount; i++) {
-			Debug.Log(i);
-			Debug.Log(transform.GetChild(i).name);
 			transform.GetChild(i).gameObject.SetActive(true);
 		}
 		SetFocusGate(Gate);
 	}
 
 	public void DisableUI() {
-		Debug.Log("DISABLE");
 		PlayerObject.GetComponent<CharacterMovement>().ModifyJump(true);
 		for (int i = 0; i <= Gates.childCount; i++) {
 			transform.GetChild(i).gameObject.SetActive(false);
