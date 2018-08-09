@@ -12030,7 +12030,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1335295711
 Transform:
@@ -17219,7 +17219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ff42c3f32425e4e9add0af8605dd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 1872124301}
+  Trigger: {fileID: 1318469939}
   PlayOnToggle: 0
 --- !u!114 &1807578675
 MonoBehaviour:
