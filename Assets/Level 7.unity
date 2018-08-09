@@ -322,7 +322,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 10137770}
-  - component: {fileID: 10137771}
   m_Layer: 0
   m_Name: Left Panel
   m_TagString: Untagged
@@ -346,26 +345,6 @@ Transform:
   m_Father: {fileID: 1258566119}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &10137771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 10137769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 1
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &12821922
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +602,6 @@ GameObject:
   - component: {fileID: 24019343}
   - component: {fileID: 24019342}
   - component: {fileID: 24019341}
-  - component: {fileID: 24019340}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -644,32 +622,6 @@ Transform:
   m_Father: {fileID: 532751230}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &24019340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 24019338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 1828970612}
-  - {fileID: 715032732}
-  - {fileID: 24019338}
-  - {fileID: 1032457906}
-  - {fileID: 1305947510}
-  - {fileID: 312579714}
 --- !u!65 &24019341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2507,7 +2459,6 @@ GameObject:
   - component: {fileID: 134919064}
   - component: {fileID: 134919063}
   - component: {fileID: 134919062}
-  - component: {fileID: 134919061}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -2528,32 +2479,6 @@ Transform:
   m_Father: {fileID: 2072715979}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &134919061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 134919059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 562773967}
-  - {fileID: 1156356390}
-  - {fileID: 134919059}
-  - {fileID: 1032457906}
-  - {fileID: 1305947510}
-  - {fileID: 312579714}
 --- !u!65 &134919062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3371,7 +3296,6 @@ MonoBehaviour:
   OR: 1
   XOR: 0
   TriggerObjects:
-  - {fileID: 0}
   - {fileID: 1177932566}
 --- !u!114 &205844329
 MonoBehaviour:
@@ -6257,7 +6181,6 @@ GameObject:
   - component: {fileID: 380028699}
   - component: {fileID: 380028698}
   - component: {fileID: 380028697}
-  - component: {fileID: 380028696}
   - component: {fileID: 380028701}
   - component: {fileID: 380028695}
   - component: {fileID: 380028702}
@@ -6289,17 +6212,6 @@ MonoBehaviour:
   - {fileID: 236823254}
   - {fileID: 1411794633}
   - {fileID: 1444180764}
---- !u!114 &380028696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 380028694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 028b93d4e350f6a4e8ef68a70b302c76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &380028697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11320,7 +11232,6 @@ GameObject:
   - component: {fileID: 672231118}
   - component: {fileID: 672231117}
   - component: {fileID: 672231116}
-  - component: {fileID: 672231115}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -11341,32 +11252,6 @@ Transform:
   m_Father: {fileID: 10137770}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &672231115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 672231113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 1959956440}
-  - {fileID: 1618898162}
-  - {fileID: 672231113}
-  - {fileID: 1032457906}
-  - {fileID: 1305947510}
-  - {fileID: 312579714}
 --- !u!65 &672231116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12117,6 +12002,7 @@ GameObject:
   - component: {fileID: 715032737}
   - component: {fileID: 715032736}
   - component: {fileID: 715032735}
+  - component: {fileID: 715032734}
   - component: {fileID: 715032733}
   - component: {fileID: 715032740}
   m_Layer: 0
@@ -12146,6 +12032,101 @@ MonoBehaviour:
   Master: {fileID: 1418390517}
   TriggerObjects:
   - {fileID: 900591594}
+--- !u!82 &715032734
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715032732}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 713f14096487842489741c76f8beeac7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 90
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &715032735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12157,7 +12138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ff42c3f32425e4e9add0af8605dd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trigger: {fileID: 0}
+  Trigger: {fileID: 715032733}
   PlayOnToggle: 0
 --- !u!114 &715032736
 MonoBehaviour:
@@ -14415,7 +14396,6 @@ GameObject:
   - component: {fileID: 860996891}
   - component: {fileID: 860996890}
   - component: {fileID: 860996889}
-  - component: {fileID: 860996888}
   - component: {fileID: 860996892}
   m_Layer: 0
   m_Name: Right Chooser Output
@@ -14437,26 +14417,6 @@ Transform:
   m_Father: {fileID: 1272665246}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &860996888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 860996886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 1
-  OR: 0
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &860996889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14838,7 +14798,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 872373108}
-  - component: {fileID: 872373109}
   m_Layer: 0
   m_Name: Right Panel
   m_TagString: Untagged
@@ -14863,26 +14822,6 @@ Transform:
   m_Father: {fileID: 1258566119}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &872373109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 872373107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 0
-  OR: 1
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &877741193
 Prefab:
   m_ObjectHideFlags: 0
@@ -24413,7 +24352,6 @@ MonoBehaviour:
   OR: 1
   XOR: 0
   TriggerObjects:
-  - {fileID: 0}
   - {fileID: 1177932566}
 --- !u!114 &1385439179
 MonoBehaviour:
@@ -24623,31 +24561,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 44ce3e8d9a6d1a0489addb497ea765fb,
     type: 3}
   m_PrefabInternal: {fileID: 1393789957}
---- !u!1 &1393789959 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 44ce3e8d9a6d1a0489addb497ea765fb,
-    type: 3}
-  m_PrefabInternal: {fileID: 1393789957}
---- !u!114 &1393789960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1393789959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653ea6671e5472c4899c78b12c8613c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Triggered: 0
-  Inversed: 0
-  SingleUse: 0
-  AND: 1
-  OR: 0
-  XOR: 0
-  TriggerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1411794632
 GameObject:
   m_ObjectHideFlags: 0
@@ -27457,7 +27370,6 @@ GameObject:
   - component: {fileID: 1545512454}
   - component: {fileID: 1545512453}
   - component: {fileID: 1545512452}
-  - component: {fileID: 1545512451}
   m_Layer: 0
   m_Name: BackPlate
   m_TagString: Untagged
@@ -27478,32 +27390,6 @@ Transform:
   m_Father: {fileID: 872373108}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1545512451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1545512449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381ffb66068004e488d82e7c309e31f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovingObject: {fileID: 0}
-  XOffset: 0
-  YOffset: 0
-  ZOffset: 1
-  X: 0
-  Y: 0
-  Z: 1
-  AppearAtOffset: 0
-  ObjectsToDisappear:
-  - {fileID: 1360912646}
-  - {fileID: 1149470597}
-  - {fileID: 1545512449}
-  - {fileID: 1032457906}
-  - {fileID: 1305947510}
-  - {fileID: 312579714}
 --- !u!65 &1545512452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31216,8 +31102,6 @@ GameObject:
   - component: {fileID: 1751008921}
   - component: {fileID: 1751008920}
   - component: {fileID: 1751008924}
-  - component: {fileID: 1751008919}
-  - component: {fileID: 1751008918}
   m_Layer: 0
   m_Name: Output Panel Display
   m_TagString: Untagged
@@ -31225,114 +31109,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1751008918
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1751008916}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 713f14096487842489741c76f8beeac7, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 90
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1751008919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1751008916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0ff42c3f32425e4e9add0af8605dd7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trigger: {fileID: 1603128309}
-  PlayOnToggle: 0
 --- !u!114 &1751008920
 MonoBehaviour:
   m_ObjectHideFlags: 0
