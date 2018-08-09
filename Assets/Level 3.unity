@@ -424,7 +424,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'OR Gates will output if
 
-    at least one input are on'
+    at least one input is on'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 1.6580806, w: 0}
   m_textInfo:
     textComponent: {fileID: 30610907}
-    characterCount: 49
+    characterCount: 48
     spriteCount: 0
     spaceCount: 10
     wordCount: 11
