@@ -825,7 +825,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &77446260
 Transform:
@@ -4036,7 +4036,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &526624530
 Transform:
@@ -9308,7 +9308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggered: 0
   Inversed: 0
-  SingleUse: 1
+  SingleUse: 0
   AND: 0
   OR: 0
   XOR: 0
@@ -12692,7 +12692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggered: 0
   Inversed: 0
-  SingleUse: 1
+  SingleUse: 0
   AND: 0
   OR: 0
   XOR: 0
@@ -16524,7 +16524,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2100222821
 Transform:
