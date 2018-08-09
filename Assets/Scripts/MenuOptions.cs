@@ -16,6 +16,7 @@ public class MenuOptions : MonoBehaviour {
 
 	private void Update() {
 		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
 
 		GameObject temp = EventSystem.current.currentSelectedGameObject;
 
