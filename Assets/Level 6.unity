@@ -7530,7 +7530,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+  - {fileID: 2100000, guid: e8f6d1bcfda75604c82ccb09b32801f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19615,7 +19615,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 44ce3e8d9a6d1a0489addb497ea765fb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+      objectReference: {fileID: 2100000, guid: 6e56d7618ab3aad4b91da7ec3629735b, type: 2}
     - target: {fileID: 3300000, guid: 44ce3e8d9a6d1a0489addb497ea765fb, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -21631,7 +21631,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 44ce3e8d9a6d1a0489addb497ea765fb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+      objectReference: {fileID: 2100000, guid: e8f6d1bcfda75604c82ccb09b32801f0, type: 2}
     - target: {fileID: 100000, guid: 44ce3e8d9a6d1a0489addb497ea765fb, type: 3}
       propertyPath: m_Name
       value: AND Gate (3)
@@ -26495,7 +26495,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+      objectReference: {fileID: 2100000, guid: ff53e482fcc1b4a4da923bdfe2e1c864, type: 2}
     - target: {fileID: 100000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -26503,7 +26503,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+      objectReference: {fileID: 2100000, guid: ff53e482fcc1b4a4da923bdfe2e1c864, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
   m_IsPrefabAsset: 0
@@ -27224,7 +27224,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+      objectReference: {fileID: 2100000, guid: ff53e482fcc1b4a4da923bdfe2e1c864, type: 2}
     - target: {fileID: 100000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -27232,7 +27232,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+      objectReference: {fileID: 2100000, guid: ff53e482fcc1b4a4da923bdfe2e1c864, type: 2}
     - target: {fileID: 100000, guid: 6f82ee8b9406aba488d38dd796f58872, type: 3}
       propertyPath: m_Name
       value: NOT Gate
@@ -28090,7 +28090,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 5c56035c560fca44e8e3c1360ea109d5, type: 2}
+  - {fileID: 2100000, guid: e8f6d1bcfda75604c82ccb09b32801f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
