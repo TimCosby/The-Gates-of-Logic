@@ -8,6 +8,7 @@ public class UIMenu : MonoBehaviour {
 	private Dictionary<string, GameObject> GateObject;
 	private Dictionary<string, int> GateQuantity;
 	private Dictionary<string, int> GateSelect;
+	private Dictionary<string, Material> GateMaterial;
 
 	public bool AND = true;
 	public bool OR = true;
@@ -16,7 +17,7 @@ public class UIMenu : MonoBehaviour {
 	public int[] DefaultValues;
 
 	public Material OutOfStock;
-	public Material InStock;
+	public Material[] InStock;
 
 	public GameObject PlayerObject;
 
@@ -30,12 +31,33 @@ public class UIMenu : MonoBehaviour {
 		GateObject = new Dictionary<string, GameObject>();
 		GateQuantity = new Dictionary<string, int>();
 		GateSelect = new Dictionary<string, int>();
+		GateMaterial = new Dictionary<string, Material>();
 		Selector = transform.GetChild(2).gameObject;
 		Gates = transform.GetChild(3);
 
-		GateSelect.Add(Gates.GetChild(0).name, 0);
-		GateSelect.Add(Gates.GetChild(1).name, 100);
-		GateSelect.Add(Gates.GetChild(2).name, -100);
+		try {
+			GateSelect.Add(Gates.GetChild(0).name, 0);
+			GateMaterial.Add(Gates.GetChild(0).name, InStock[0]);
+		}
+		catch (System.Exception e) {
+			Debug.Log("AND Gate not included.");
+		}
+
+		try {
+			GateSelect.Add(Gates.GetChild(1).name, 100);
+			GateMaterial.Add(Gates.GetChild(1).name, InStock[1]);
+		}
+		catch (System.Exception e) {
+			Debug.Log("OR Gate not included.");
+		}
+
+		try {
+			GateSelect.Add(Gates.GetChild(2).name, -100);
+			GateMaterial.Add(Gates.GetChild(2).name, InStock[2]);
+		}
+		catch (System.Exception e) {
+			Debug.Log("XOR Gate not included.");
+		}
 
 		for (int i = 0; i < Gates.childCount; i++) {
 			Transform GateChild = Gates.GetChild(i);
@@ -51,7 +73,7 @@ public class UIMenu : MonoBehaviour {
 				GateObject[GateChild.name].GetComponent<Image>().color = OutOfStock.color;
 			}
 			else {
-				GateObject[GateChild.name].GetComponent<Image>().color = InStock.color;
+				GateObject[GateChild.name].GetComponent<Image>().color = GateMaterial[GateChild.name].color;
 			}
 			UpdateText(GateChild.name);
 		}
@@ -79,7 +101,7 @@ public class UIMenu : MonoBehaviour {
 			GateObject[Gate].GetComponent<Image>().color = OutOfStock.color;
 		}
 		else {
-			GateObject[Gate].GetComponent<Image>().color = InStock.color;
+			GateObject[Gate].GetComponent<Image>().color = GateMaterial[Gate].color;
 		}
 
 		UpdateText(Gate);
@@ -94,12 +116,18 @@ public class UIMenu : MonoBehaviour {
 			return OutOfStock;
 		}
 		else {
-			return InStock;
+			return GateMaterial[Gate];
 		}
 	}
 
-	public bool IsGateActive(Material material) {
-		return material == InStock;
+	/*private Material GetSpecificGateMaterial(string Gate) {
+		if (Gate.Equals("AND Gate")) { 
+			
+		}
+	}*/
+
+	public bool IsGateActive(Material material, string Gate) {
+		return material == GateMaterial[Gate];
 	}
 
 	public string GetFocusGate() {

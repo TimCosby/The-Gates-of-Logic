@@ -42,7 +42,7 @@ public class GateChooser : Trigger {
 
 			if (Input.GetKeyDown("space")) {
 				GateObject[CurrentGate].SetActive(false);
-				if (menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
+				if (menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial, GateName[CurrentGate])) {
 					menu.ModifyGate(GateName[CurrentGate], 1);
 				}
 
@@ -55,7 +55,7 @@ public class GateChooser : Trigger {
 				menu.SetFocusGate(GateName[CurrentGate]);
 
 				GateObject[CurrentGate].GetComponent<Renderer>().material = menu.GetGateMaterial(GateName[CurrentGate]);
-				if (menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
+				if (menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial, GateName[CurrentGate])) {
 					menu.ModifyGate(GateName[CurrentGate], -1);
 					Triggered = true;
 				}
@@ -66,7 +66,7 @@ public class GateChooser : Trigger {
 
 		}
 		else if (WasTriggered) {
-			if (!menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial)) {
+			if (!menu.IsGateActive(GateObject[CurrentGate].GetComponent<Renderer>().sharedMaterial, GateName[CurrentGate])) {
 				GateObject[CurrentGate].SetActive(false);
 			}
 			menu.DisableUI();
