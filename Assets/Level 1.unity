@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000230, guid: 243ce207a3e86a8469669ab3d404f039,
+  m_LightingDataAsset: {fileID: 112000228, guid: 0308cb451775e3f4d95f3292d8dfd253,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1019,7 +1019,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &78652358
 Transform:
@@ -2429,9 +2429,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Toggled: 0
-  MinStartingIntensity: 10
-  MaxStartingIntensity: 60
-  SmoothingOffset: 4
+  MinStartingIntensity: 5
+  MaxStartingIntensity: 80
+  SmoothingOffset: 10
   MinIntensity: 10
   MaxIntensity: 300
   Trigger: {fileID: 1989005816}
@@ -17623,7 +17623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1227686379
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -25905,7 +25905,7 @@ MonoBehaviour:
   m_Version: 1
   shadowResolution: 512
   shadowDimmer: 1
-  shadowFadeDistance: 10000
+  shadowFadeDistance: 50
   viewBiasMin: 0.2
   viewBiasMax: 100
   viewBiasScale: 1
@@ -25952,7 +25952,7 @@ MonoBehaviour:
   areaIntensity: 200
   m_InnerSpotPercent: 0
   lightDimmer: 1
-  fadeDistance: 10000
+  fadeDistance: 50
   affectDiffuse: 1
   affectSpecular: 1
   lightTypeExtent: 0
@@ -25977,7 +25977,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.5411765, g: 0.46666667, b: 0.79607844, a: 1}
   m_Intensity: 47.746483
-  m_Range: 20
+  m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -26016,7 +26016,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
